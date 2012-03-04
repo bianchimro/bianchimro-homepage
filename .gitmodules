@@ -4,3 +4,6 @@
 [submodule "submodules/django-registration-defaults"]
 	path = submodules/django-registration-defaults
 	url = https://github.com/yourcelf/django-registration-defaults.git
+[submodule "submodules/less.js"]
+	path = submodules/less.js
+	url = https://github.com/cloudhead/less.js.git
