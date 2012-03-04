@@ -14,8 +14,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': os.path.join(PROJECT_PATH, 'db/database.sqlite'),                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -48,18 +48,18 @@ USE_L10N = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = ''
+MEDIA_URL = "/media/"
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -101,15 +101,30 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'cms.middleware.multilingual.MultilingualURLMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'bianchimro.urls'
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.request',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'cms.context_processors.media',
+    'sekizai.context_processors.sekizai',
+)
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_PATH, "templates"),
 )
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -119,10 +134,53 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admindocs',
+    
+    #cms related
+    'cms',
+    'mptt',
+    'menus',
+    'south',
+    'sekizai',
+    
+    #the following plugins should be disabled, if using filer plugins
+    'cms.plugins.file',
+    'cms.plugins.picture',
+    'cms.plugins.teaser',
+    'cms.plugins.video',
+    
+    'cms.plugins.flash',
+    'cms.plugins.googlemap',
+    'cms.plugins.link',
+    'cms.plugins.snippet',
+    'cms.plugins.text',
+    'cms.plugins.twitter',
+    
 )
+
+
+
+#cms templates for django-cms
+CMS_TEMPLATES = (
+    ('cms/base_page.html', 'Base page'),
+    ('cms/template_single_column.html', 'Single column'),
+    ('cms/template_2_columns_left_sidebar.html', 'Two columns - sidebar left'),
+
+)
+
+#This setting enables permissions on cms pages
+CMS_PERMISSION = True
+#Enables additional "soft root" setting in cms
+#TODO: check if it is useful
+#CMS_SOFTROOT = True
+
+LANGUAGES = [
+    ('it', 'Italiano'),
+    ('en', 'English'),
+]
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
