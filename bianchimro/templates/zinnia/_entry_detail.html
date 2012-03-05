@@ -1,6 +1,6 @@
 {% load tagging_tags comments i18n %}
 <div class="row">
-    <div class="entry-header span12 last">
+    <div class="entry-header span9">
       <h2 class="entry-title">
         <a href="{{ object.get_absolute_url }}" title="{{ object.title }}" rel="bookmark">
           {{ object.title }}
@@ -28,7 +28,7 @@
     </div>
 </div>
 <div class="row">
-<div class="entry-body span12 last">
+<div class="entry-body span9">
   {% if object.image %}
   <div class="entry-image">
     <p>
@@ -44,7 +44,7 @@
 </div>
 </div>
 <div class="row">
-<div class="entry-footer span12 well">
+<div class="entry-footer span9 well">
   <p class="entry-tags">
     <strong>{% trans "Tags" %}</strong> :
     {% tags_for_object object as tag_list %}

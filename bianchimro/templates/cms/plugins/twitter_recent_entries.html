@@ -2,7 +2,7 @@
  
  
 <div class="plugin_twitter row">
-    
+    <div class="span9">
 	<h2>{{ object.title }} <a href="https://www.twitter.com/{{ object.twitter_user }}" class="twitter-icon">{% trans "Twitter" %}</a></h2>
 	<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
@@ -33,5 +33,5 @@ new TWTR.Widget({
 }).render().setUser('{{ object.twitter_user }}').start();
 </script>
 
-
+</div>
 </div>

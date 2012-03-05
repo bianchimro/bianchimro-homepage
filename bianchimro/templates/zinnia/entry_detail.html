@@ -7,7 +7,7 @@
 
 {% block meta-keywords %}{% if object.tags %}{{ object.tags }}{% else %}{{ block.super }}{% endif %}{% endblock %}
 <div class="row">
-    <div class="span12">
+    <div class="span8">
     {% block link %}
       {{ block.super }}
       {% with object.previous_entry as previous_entry %}{% if previous_entry %}
@@ -40,7 +40,7 @@
 
 {% block content %}
 <div class="row">
-    <div id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %} span12">
+    <div id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %} span8">
       {% with object.html_content|safe as object_content %}
       {% include "zinnia/_entry_detail.html" %}
       {% endwith %}
@@ -49,7 +49,7 @@
 
  
 <div class="row">
-    <div class="entry-widgets span12 well">
+    <div class="entry-widgets span8 well">
       {% with object.next_entry as next_entry %}
       {% if next_entry %}
       <div class="entry-next">
@@ -99,7 +99,7 @@
 
  
 <div class="row">
-    <div id="comments" class="span12 well">
+    <div id="comments" class="span8 well">
       <h3>{% trans "Comments" %}</h3>
       {% with object.comments as comment_list %}
       {% if comment_list.count %}
@@ -152,7 +152,7 @@
 
 </div>
 <div class="row">
-    <div id="pingbacks" class="span6">
+    <div id="pingbacks" class="span4">
       <h3>{% trans "Pingbacks" %}</h3>
       {% with object.pingbacks as pingback_list %}
       {% if pingback_list.count %}
@@ -183,7 +183,7 @@
     </div>
      
  
-    <div id="trackbacks" class="span6">
+    <div id="trackbacks" class="span4">
       <h3>{% trans "Trackbacks" %}</h3>
       {% with object.trackbacks as trackback_list %}
       {% if trackback_list.count %}
