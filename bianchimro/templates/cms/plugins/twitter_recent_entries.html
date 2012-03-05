@@ -1,0 +1,37 @@
+{% load i18n sekizai_tags %}
+ 
+ 
+<div class="plugin_twitter row">
+    
+	<h2>{{ object.title }} <a href="https://www.twitter.com/{{ object.twitter_user }}" class="twitter-icon">{% trans "Twitter" %}</a></h2>
+	<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp:  {{ object.count }},
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#039edb',
+      color: '#000000'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#00008c'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('bianchimro').start();
+</script>
+
+
+</div>
