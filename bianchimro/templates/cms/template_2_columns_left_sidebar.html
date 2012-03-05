@@ -5,7 +5,9 @@
 {% block main %}
 <div class="row">
     <div class="span3">
+    {%if current_page.has_children %}
     {% include "menu_templates/submenu.html" %}
+    {% endif %}  
     {% placeholder column_1 %}
     </div>     
     <div class="span9">
