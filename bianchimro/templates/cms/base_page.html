@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Agenzia Mobilità Ambiente Territorio</title>
+    <title>Mauro Bianchi webpage</title>
     <meta name="description" content="">
     <meta name="author" content="">
     
@@ -14,15 +14,19 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-    <link href="/static/css/amat.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+   
+    <!-- not working with the current less version ... 
+      <link rel="stylesheet/less" href="/static/bootstrap/less/bootstrap.less">
+      <script src="/static/less.js/less-1.2.2.min.js"></script>       
+    -->
+  
     <style>
       body {
-        padding-top: 20px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
-
+   
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -31,17 +35,8 @@
   </head>
 
   <body>
-    {% cms_toolbar %}
-    <div class="container">
-      <div class="span12">
-      <h1>AMAT</h1>
-      <p>
-        Agenzia Mobilità Ambiente Territorio
-      </p>
-      </div>
-    </div> <!-- /container -->
-    
-    <div class="navbar">
+
+  <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -49,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <!--<a class="brand" href="#">AMAT</a>-->
+          <a class="brand" href="#">Project name</a>
           <div class="nav-collapse">
             <ul class="nav">
               {% show_menu 0 100 100 100 "menu_templates/menu_single_level.html" %}
@@ -58,6 +53,10 @@
         </div>
       </div>
     </div>
+    
+ 
+    
+    
     
     <div class="container main-container">
         {%if current_page.level %}
@@ -70,25 +69,29 @@
         {% endblock %}
 
     </div>
+  {% cms_toolbar %}
     
     
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/static/assets/js/jquery.js"></script>
-    <script src="/static/assets/js/bootstrap-transition.js"></script>
-    <script src="/static/assets/js/bootstrap-alert.js"></script>
-    <script src="/static/assets/js/bootstrap-modal.js"></script>
-    <script src="/static/assets/js/bootstrap-dropdown.js"></script>
-    <script src="/static/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="/static/assets/js/bootstrap-tab.js"></script>
-    <script src="/static/assets/js/bootstrap-tooltip.js"></script>
-    <script src="/static/assets/js/bootstrap-popover.js"></script>
-    <script src="/static/assets/js/bootstrap-button.js"></script>
-    <script src="/static/assets/js/bootstrap-collapse.js"></script>
-    <script src="/static/assets/js/bootstrap-carousel.js"></script>
-    <script src="/static/assets/js/bootstrap-typeahead.js"></script>
+    
+
+    
+    <script src="/static/bootstrap/js/jquery.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-typeahead.js"></script>
     {% render_block "js" %}
 
   </body>
