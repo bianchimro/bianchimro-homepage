@@ -3,6 +3,7 @@ PIL==1.1.7
 South==0.7.3
 django-classy-tags==0.3.4.1
 django-cms==2.2
+django-debug-toolbar==0.9.4
 django-mptt==0.5.2
 django-registration==0.7
 django-sekizai==0.5
