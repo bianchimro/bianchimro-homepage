@@ -2,7 +2,7 @@ BeautifulSoup==3.2.1
 Django==1.3.1
 PIL==1.1.7
 South==0.7.3
-django-blog-zinnia==0.9
+-e git://github.com/bianchimro/django-blog-zinnia.git#egg=django_blog_zinnia-dev
 django-classy-tags==0.3.4.1
 django-cms==2.2
 django-debug-toolbar==0.9.4
