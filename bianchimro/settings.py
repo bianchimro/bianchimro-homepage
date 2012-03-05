@@ -160,6 +160,13 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.twitter',
     
+    'tagging',
+    'zinnia',
+    'zinnia.plugins',
+    'django.contrib.comments',
+    
+    
+    
 )
 
 
@@ -183,6 +190,9 @@ LANGUAGES = [
     ('en', 'English'),
 ]
 
+
+#blog stuff
+ZINNIA_ENTRY_BASE_MODEL = 'zinnia.plugins.placeholder.EntryPlaceholder'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
