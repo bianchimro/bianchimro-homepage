@@ -200,7 +200,7 @@ LANGUAGES = [
 ]
 
 
-#cms default editor config -- we could switch to tinymce ..
+#cms default editor config -- but probably we'll stick to tinymce ..
 WYM_TOOLS = ",\n".join([
     "{'name': 'Bold', 'title': 'Strong', 'css': 'wym_tools_strong'}",
     "{'name': 'Italic', 'title': 'Emphasis', 'css': 'wym_tools_emphasis'}",
@@ -221,8 +221,8 @@ WYM_TOOLS = ",\n".join([
     "{'name': 'Preview', 'title': 'Preview', 'css': 'wym_tools_preview'}",
 ])
 
-WYM_STYLES = '/static/bootstrap/css/bootstrap.css'
-
+#this seems to break wym skin
+#WYM_STYLES = '/static/bootstrap/css/bootstrap.css'
 
 #if using tinymce
 CMS_USE_TINYMCE = True
@@ -235,8 +235,6 @@ TINYMCE_DEFAULT_CONFIG = {
     'theme_advanced_toolbar_location' : "top",
     'theme_advanced_toolbar_align' : "left",
     'content_css' : "/static/bootstrap/css/bootstrap.css",
-
-    
 }
 
 
