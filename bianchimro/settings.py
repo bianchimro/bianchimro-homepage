@@ -165,6 +165,11 @@ INSTALLED_APPS = (
     'zinnia.plugins',
     'django.contrib.comments',
     
+    #imagestore
+    'imagestore',
+    'sorl.thumbnail',
+    'imagestore.imagestore_cms',
+    
     
     
 )
@@ -176,6 +181,7 @@ CMS_TEMPLATES = (
     ('base_page.html', 'Base page'),
     ('template_single_column.html', 'Single column'),
     ('template_2_columns_left_sidebar.html', 'Two columns - sidebar left'),
+    ('template_2_columns_left_sidebar_gallery.html', 'Two columns - sidebar left with gallery'),
 
 )
 
@@ -216,3 +222,7 @@ LOGGING = {
         },
     }
 }
+
+
+#imagestore
+IMAGESTORE_SHOW_USER = False
