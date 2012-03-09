@@ -18,9 +18,10 @@ urlpatterns = patterns('',
     
     #url(r'^weblog/', include('zinnia.urls')),    
     url(r'^comments/', include('django.contrib.comments.urls')),
-    
+    #(r'^gallery/', include('imagestore.urls', namespace='imagestore')),
     #cms urls
     url(r'^', include('cms.urls')),
+    url(r'^', include('cms.urls', namespace='imagestore'))
     
 
     
