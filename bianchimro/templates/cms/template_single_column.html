@@ -3,6 +3,20 @@
 
 
 {% block main %}
+{% addtoblock "css" %}
+    <link rel="stylesheet" type="text/css" href="/static/shadowbox/shadowbox.css">
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+<script type="text/javascript" src="/static/shadowbox/shadowbox.js"></script>
+{% endaddtoblock %}
+{% addtoblock "js" %}
+<script type="text/javascript">
+    Shadowbox.init({handleOversize: "drag",overlayOpacity:0.8,modal:true,initialHeight:400,initialWidth:600});
+</script>
+{% endaddtoblock %}
+
+
 <div class="row">
     <div class="span12">
     {% placeholder column_1 %}
