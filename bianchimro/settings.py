@@ -147,6 +147,8 @@ INSTALLED_APPS = (
     'south',
     'sekizai',
     
+    'tinymce',
+    
     #the following plugins should be disabled, if using filer plugins
     'cms.plugins.file',
     'cms.plugins.picture',
@@ -158,6 +160,7 @@ INSTALLED_APPS = (
     'cms.plugins.link',
     'cms.plugins.snippet',
     'cms.plugins.text',
+
     'cms.plugins.twitter',
     
     'tagging',
@@ -195,6 +198,46 @@ LANGUAGES = [
     ('it', 'Italiano'),
     ('en', 'English'),
 ]
+
+
+#cms default editor config -- we could switch to tinymce ..
+WYM_TOOLS = ",\n".join([
+    "{'name': 'Bold', 'title': 'Strong', 'css': 'wym_tools_strong'}",
+    "{'name': 'Italic', 'title': 'Emphasis', 'css': 'wym_tools_emphasis'}",
+    "{'name': 'Superscript', 'title': 'Superscript', 'css': 'wym_tools_superscript'}",
+    "{'name': 'Subscript', 'title': 'Subscript', 'css': 'wym_tools_subscript'}",
+    "{'name': 'InsertOrderedList', 'title': 'Ordered_List', 'css': 'wym_tools_ordered_list'}",
+    "{'name': 'InsertUnorderedList', 'title': 'Unordered_List', 'css': 'wym_tools_unordered_list'}",
+    "{'name': 'Indent', 'title': 'Indent', 'css': 'wym_tools_indent'}",
+    "{'name': 'Outdent', 'title': 'Outdent', 'css': 'wym_tools_outdent'}",
+    "{'name': 'Undo', 'title': 'Undo', 'css': 'wym_tools_undo'}",
+    "{'name': 'Redo', 'title': 'Redo', 'css': 'wym_tools_redo'}",
+    "{'name': 'Paste', 'title': 'Paste_From_Word', 'css': 'wym_tools_paste'}",
+    "{'name': 'ToggleHtml', 'title': 'HTML', 'css': 'wym_tools_html'}",
+    "{'name': 'CreateLink', 'title': 'Link', 'css': 'wym_tools_link'}",
+    "{'name': 'Unlink', 'title': 'Unlink', 'css': 'wym_tools_unlink'}",
+    "{'name': 'InsertImage', 'title': 'Image', 'css': 'wym_tools_image'}",
+    "{'name': 'InsertTable', 'title': 'Table', 'css': 'wym_tools_table'}",
+    "{'name': 'Preview', 'title': 'Preview', 'css': 'wym_tools_preview'}",
+])
+
+WYM_STYLES = '/static/bootstrap/css/bootstrap.css'
+
+
+#if using tinymce
+CMS_USE_TINYMCE = True
+
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': "table,spellchecker,paste,searchreplace",
+    'theme': "advanced",
+    'skin' : "o2k7",
+    'width' : '100%',
+    'theme_advanced_toolbar_location' : "top",
+    'theme_advanced_toolbar_align' : "left",
+    'content_css' : "/static/bootstrap/css/bootstrap.css",
+
+    
+}
 
 
 #blog stuff
