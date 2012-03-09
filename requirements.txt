@@ -2,10 +2,11 @@ BeautifulSoup==3.2.1
 Django==1.3.1
 PIL==1.1.7
 South==0.7.3
--e git://github.com/bianchimro/django-blog-zinnia.git#egg=django_blog_zinnia-dev
+-e git://github.com/bianchimro/django-blog-zinnia.git@de3b9339ed8c43e95dd144eb45e6b603b44529a2#egg=django_blog_zinnia-dev
 django-classy-tags==0.3.4.1
 django-cms==2.2
 django-debug-toolbar==0.9.4
+django-fancy-autocomplete==0.1a1
 django-inline-ordering==0.1.3
 django-mptt==0.5.2
 django-registration==0.7
@@ -13,6 +14,8 @@ django-sekizai==0.5
 django-tagging==0.3.1
 django-xmlrpc==0.1.3
 html5lib==0.95
+imagestore==2.7.0
 pyparsing==1.5.6
 simple-translation==0.8.6
+sorl-thumbnail==11.12
 wsgiref==0.1.2
