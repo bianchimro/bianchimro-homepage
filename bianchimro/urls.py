@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'bianchimro.views.home', name='home'),
     # url(r'^bianchimro/', include('bianchimro.foo.urls')),
-
+    url(r'^admin_tools/', include('admin_tools.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
