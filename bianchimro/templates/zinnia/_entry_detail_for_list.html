@@ -1,4 +1,4 @@
-{% load tagging_tags comments i18n %}
+{% load tagging_tags comments i18n thumbnail %}
 <div class="row">
     <div class="entry-header span9">
       <h2 class="entry-title">
@@ -30,13 +30,16 @@
 <div class="row">
 <div class="entry-body span9">
   {% if object.image %}
-  <div class="entry-image">
+  <div class="entry-image entry-image-thumbnail">
     <p>
       <a href="{{ object.get_absolute_url }}" rel="bookmark">
-	<img src="{{ object.image.url }}" alt="{{ object.title }}" class="left" />
+     {% thumbnail object.image "120x120" crop="center" as im %}  
+	    <img src="{{ im.url }}" alt="{{ object.title }}" class="left" />
+     {% endthumbnail %}	
       </a>
     </p>
-  </div>
+  </div>  
+  
   {% endif %}
   <div class="entry-content">
     {{ object_content }}

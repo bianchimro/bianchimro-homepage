@@ -33,3 +33,9 @@
 .footer {padding-top:10px;padding-bottom:10px; min-height:100px; margin-top:20px;}
 
 .footer-slogan{text-align:center; margin-top:40px;}
+
+.entry-image-thumbnail{
+    float:left;
+    margin: 0 1em 1em 0;
+
+}
