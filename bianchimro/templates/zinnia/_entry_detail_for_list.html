@@ -29,19 +29,18 @@
 </div>
 <div class="row">
 <div class="entry-body span9">
+   
+  <div class="entry-content">
   {% if object.image %}
-  <div class="entry-image entry-image-thumbnail">
-    <p>
+   
       <a href="{{ object.get_absolute_url }}" rel="bookmark">
      {% thumbnail object.image "120x120" crop="center" as im %}  
-	    <img src="{{ im.url }}" alt="{{ object.title }}" class="left" />
+	    <img class="entry-image-thumbnail" src="{{ im.url }}" alt="{{ object.title }}" class="left" />
      {% endthumbnail %}	
       </a>
-    </p>
-  </div>  
+   
   
   {% endif %}
-  <div class="entry-content">
     {{ object_content }}
   </div>
 </div>
