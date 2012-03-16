@@ -1,7 +1,7 @@
 .main-container {min-height:700px; background:#FFF;}
 
-
-
+html { background: transparent; }
+body { background: #FFF; }
 /*
 .footer *{color: #999999;}
 */

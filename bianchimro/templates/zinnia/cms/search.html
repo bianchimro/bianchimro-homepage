@@ -5,9 +5,10 @@
   <form method="get" id="searchform" action="{% url zinnia_entry_search %}">
     <p>
       <input type="text" value="{% trans "Keywords..." %}" name="pattern" id="searchbox" onfocus="this.value=''" />
-      <input type="submit" class="btn" value="OK" />
+      <input type="submit" class="btn" value="Search" />
+
       <a title="{% trans 'You can use - to exclude words or phrases, &quot;double quotes&quot; for exact phrases and the AND/OR boolean operators combined with parenthesis for complex searchs.' %}">
-        <img src="{{ ZINNIA_MEDIA_URL }}img/help.png" alt="?" width="14" height="14" />
+        <i class="icon-search"></i>
       </a>
     </p>
   </form>

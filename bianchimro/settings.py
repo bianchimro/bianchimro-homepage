@@ -238,6 +238,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'theme': "advanced",
     'skin' : "o2k7",
     'width' : '100%',
+    'height' : '500px',
     'theme_advanced_toolbar_location' : "top",
     'theme_advanced_toolbar_align' : "left",
     'content_css' : "/static/bootstrap/css/bootstrap.css",
