@@ -16,7 +16,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     
-    #url(r'^weblog/', include('zinnia.urls')),    
+    
     url(r'^comments/', include('django.contrib.comments.urls')),
     #(r'^gallery/', include('imagestore.urls', namespace='imagestore')),
 
@@ -24,8 +24,8 @@ urlpatterns = patterns('',
 
     #cms urls
     url(r'^', include('cms.urls')),
-    url(r'^', include('cms.urls', namespace='imagestore'))
-    
+    url(r'^', include('cms.urls', namespace='imagestore')),
+    url(r'^blog/', include('zinnia.urls')),    
 
     
 )
