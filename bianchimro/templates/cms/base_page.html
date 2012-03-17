@@ -26,7 +26,7 @@
   
     <style>
       body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-top: 100px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
    
@@ -44,6 +44,7 @@
   </head>
 
   <body>
+  <div class="superwrapper">
 {% cms_toolbar %}
   <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -53,7 +54,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">Mauro Bianchi</a>
+          <a class="brand" href="/">Mauro Bianchi <span class="colorbrand">Personal Homepage</span></a>
+                   
+        </div>
+      </div>
+      
+    <div class="navbar-inner2">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+           
           <div class="nav-collapse">
             <ul class="nav">
               {% show_menu 0 100 100 100 "menu_templates/menu_single_level.html" %}
@@ -61,11 +74,12 @@
           </div><!--/.nav-collapse -->
         </div>
       </div>
+
+
     
   </div>
     
  
-    
     
     
     <div class="container main-container">
@@ -77,8 +91,6 @@
         {% block main%}
         
         {% endblock %}
-        
-
     </div>
   
     <div class="footer">
@@ -86,6 +98,7 @@
             <div class="row">
                 <div class="span12 footer-slogan">
                     {% placeholder footer_slogan %}
+                    <p>© <strong>Mauro Bianchi</strong> 2012 - Powered by Django and DjangoCMS</p>
                 </div>
             </div>
         </div>
@@ -130,6 +143,6 @@
     </script>
     
     
-
+  </div>
   </body>
 </html>
