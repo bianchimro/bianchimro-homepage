@@ -44,11 +44,12 @@ if settings.DEBUG:
 ) + urlpatterns
 """
 
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-urlpatterns += staticfiles_urlpatterns()
+if settings.DEBUG:
+    from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+    urlpatterns += staticfiles_urlpatterns()
 
 
 #overrides
-from overrides import *
+import overrides.zinnia_moderation
 
 
