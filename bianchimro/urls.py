@@ -31,13 +31,24 @@ urlpatterns = patterns('',
 )
 
 
-if settings.DEBUG:
+if settings.DEBUG or True:
     urlpatterns = patterns('',
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
+) + urlpatterns
+
+"""
+if settings.DEBUG:
+    urlpatterns = patterns('',
     url(r'', include('django.contrib.staticfiles.urls')),
 ) + urlpatterns
+"""
 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns += staticfiles_urlpatterns()
+
+
+#overrides
+from overrides import *
+
 
