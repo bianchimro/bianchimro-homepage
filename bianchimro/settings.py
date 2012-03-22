@@ -180,7 +180,7 @@ INSTALLED_APPS = (
     'imagestore.imagestore_cms',
     
     #testing cms_js
-    'cms_jsapp',
+    #'cms_jsapp',
     
     
     
