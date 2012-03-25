@@ -179,8 +179,8 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
     'imagestore.imagestore_cms',
     
-    #testing cms_js
-    #'cms_jsapp',
+    #testing cms_fragments
+    'cms_fragments',
     
     
     

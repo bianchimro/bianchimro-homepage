@@ -6,6 +6,7 @@ django-admin-tools==0.4.1
 -e git://github.com/bianchimro/django-blog-zinnia.git@29c75d6997f7b29d5e3dc5b991d733eda03a376f#egg=django_blog_zinnia-dev
 django-classy-tags==0.3.4.1
 django-cms==2.2
+django-cms-fragments==0.0.3
 django-debug-toolbar==0.9.4
 django-fancy-autocomplete==0.1a1
 django-inline-ordering==0.1.3
