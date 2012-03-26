@@ -171,7 +171,7 @@ INSTALLED_APPS = (
     
     'tagging',
     'zinnia',
-    'zinnia.plugins',
+    'cmsplugin_zinnia',
     'django.contrib.comments',
     
     #imagestore
@@ -249,7 +249,7 @@ TINYMCE_DEFAULT_CONFIG = {
 
 
 #blog stuff
-ZINNIA_ENTRY_BASE_MODEL = 'zinnia.plugins.placeholder.EntryPlaceholder'
+ZINNIA_ENTRY_BASE_MODEL = 'cmsplugin_zinnia.placeholder.EntryPlaceholder'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
