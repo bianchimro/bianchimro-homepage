@@ -1,5 +1,5 @@
 {% extends "base_page.html" %}
-{% load cms_tags sekizai_tags menu_tags cms_fragments_tags  %}
+{% load cms_tags sekizai_tags menu_tags  %}
 
 
 {% block main %}
@@ -26,7 +26,9 @@
 <div class="row">
     <div class="span12">
     {% placeholder bottom %}
+    {% comment %}
     {% region "test_region" %}
+    {% endcomment %}
     </div>     
 </div>
 {% endblock %}

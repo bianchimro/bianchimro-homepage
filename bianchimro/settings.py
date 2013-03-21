@@ -181,11 +181,6 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
     'imagestore.imagestore_cms',
     
-    #testing cms_fragments
-    'cms_fragments',
-    
-    
-    
 )
 
 
@@ -275,11 +270,6 @@ LOGGING = {
         },
     }
 }
-
-CMS_FRAGMENTS_REGIONS = [
-    ("test_region", "A test region"),
-    
-    ]
 
 
 #imagestore
