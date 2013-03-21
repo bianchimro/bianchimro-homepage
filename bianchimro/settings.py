@@ -93,6 +93,8 @@ SECRET_KEY = 'f6lnv$(f@ui%*l1^t*s%#_u=zxykc&-f8h^$hyw-c@sf0j$a^f'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
+    'django.template.loaders.app_directories.load_template_source',
+    
 #     'django.template.loaders.eggs.Loader',
 )
 
@@ -273,6 +275,11 @@ LOGGING = {
         },
     }
 }
+
+CMS_FRAGMENTS_REGIONS = [
+    ("test_region", "A test region"),
+    
+    ]
 
 
 #imagestore
