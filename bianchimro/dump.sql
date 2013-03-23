@@ -10,14 +10,14 @@ SET client_min_messages = warning;
 SET escape_string_warning = off;
 
 --
--- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: -
 --
 
 CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 
 
 --
--- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: -
 --
 
 COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
@@ -30,7 +30,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: admin_tools_dashboard_preferences; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: admin_tools_dashboard_preferences; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE admin_tools_dashboard_preferences (
@@ -41,10 +41,8 @@ CREATE TABLE admin_tools_dashboard_preferences (
 );
 
 
-ALTER TABLE public.admin_tools_dashboard_preferences OWNER TO maurobianchi_webuser;
-
 --
--- Name: admin_tools_dashboard_preferences_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: admin_tools_dashboard_preferences_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE admin_tools_dashboard_preferences_id_seq
@@ -55,24 +53,22 @@ CREATE SEQUENCE admin_tools_dashboard_preferences_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.admin_tools_dashboard_preferences_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: admin_tools_dashboard_preferences_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: admin_tools_dashboard_preferences_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE admin_tools_dashboard_preferences_id_seq OWNED BY admin_tools_dashboard_preferences.id;
 
 
 --
--- Name: admin_tools_dashboard_preferences_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: admin_tools_dashboard_preferences_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('admin_tools_dashboard_preferences_id_seq', 1, false);
 
 
 --
--- Name: admin_tools_menu_bookmark; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: admin_tools_menu_bookmark; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE admin_tools_menu_bookmark (
@@ -83,10 +79,8 @@ CREATE TABLE admin_tools_menu_bookmark (
 );
 
 
-ALTER TABLE public.admin_tools_menu_bookmark OWNER TO maurobianchi_webuser;
-
 --
--- Name: admin_tools_menu_bookmark_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: admin_tools_menu_bookmark_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE admin_tools_menu_bookmark_id_seq
@@ -97,24 +91,22 @@ CREATE SEQUENCE admin_tools_menu_bookmark_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.admin_tools_menu_bookmark_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: admin_tools_menu_bookmark_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: admin_tools_menu_bookmark_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE admin_tools_menu_bookmark_id_seq OWNED BY admin_tools_menu_bookmark.id;
 
 
 --
--- Name: admin_tools_menu_bookmark_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: admin_tools_menu_bookmark_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('admin_tools_menu_bookmark_id_seq', 1, false);
 
 
 --
--- Name: auth_group; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_group; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE auth_group (
@@ -123,10 +115,8 @@ CREATE TABLE auth_group (
 );
 
 
-ALTER TABLE public.auth_group OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_group_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_group_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE auth_group_id_seq
@@ -137,24 +127,22 @@ CREATE SEQUENCE auth_group_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_group_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_group_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_group_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE auth_group_id_seq OWNED BY auth_group.id;
 
 
 --
--- Name: auth_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('auth_group_id_seq', 1, false);
 
 
 --
--- Name: auth_group_permissions; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_group_permissions; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE auth_group_permissions (
@@ -164,10 +152,8 @@ CREATE TABLE auth_group_permissions (
 );
 
 
-ALTER TABLE public.auth_group_permissions OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_group_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE auth_group_permissions_id_seq
@@ -178,24 +164,22 @@ CREATE SEQUENCE auth_group_permissions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_group_permissions_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_group_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE auth_group_permissions_id_seq OWNED BY auth_group_permissions.id;
 
 
 --
--- Name: auth_group_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('auth_group_permissions_id_seq', 1, false);
 
 
 --
--- Name: auth_message; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_message; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE auth_message (
@@ -205,10 +189,8 @@ CREATE TABLE auth_message (
 );
 
 
-ALTER TABLE public.auth_message OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_message_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_message_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE auth_message_id_seq
@@ -219,24 +201,22 @@ CREATE SEQUENCE auth_message_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_message_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_message_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_message_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE auth_message_id_seq OWNED BY auth_message.id;
 
 
 --
--- Name: auth_message_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_message_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('auth_message_id_seq', 1, false);
 
 
 --
--- Name: auth_permission; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_permission; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE auth_permission (
@@ -247,10 +227,8 @@ CREATE TABLE auth_permission (
 );
 
 
-ALTER TABLE public.auth_permission OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_permission_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_permission_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE auth_permission_id_seq
@@ -261,24 +239,22 @@ CREATE SEQUENCE auth_permission_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_permission_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_permission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_permission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE auth_permission_id_seq OWNED BY auth_permission.id;
 
 
 --
--- Name: auth_permission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_permission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('auth_permission_id_seq', 258, true);
 
 
 --
--- Name: auth_user; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE auth_user (
@@ -296,10 +272,8 @@ CREATE TABLE auth_user (
 );
 
 
-ALTER TABLE public.auth_user OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_user_groups; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_groups; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE auth_user_groups (
@@ -309,10 +283,8 @@ CREATE TABLE auth_user_groups (
 );
 
 
-ALTER TABLE public.auth_user_groups OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_user_groups_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_groups_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE auth_user_groups_id_seq
@@ -323,24 +295,22 @@ CREATE SEQUENCE auth_user_groups_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_user_groups_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_user_groups_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_groups_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE auth_user_groups_id_seq OWNED BY auth_user_groups.id;
 
 
 --
--- Name: auth_user_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('auth_user_groups_id_seq', 1, false);
 
 
 --
--- Name: auth_user_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE auth_user_id_seq
@@ -351,24 +321,22 @@ CREATE SEQUENCE auth_user_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_user_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE auth_user_id_seq OWNED BY auth_user.id;
 
 
 --
--- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('auth_user_id_seq', 1, false);
 
 
 --
--- Name: auth_user_user_permissions; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_user_permissions; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE auth_user_user_permissions (
@@ -378,10 +346,8 @@ CREATE TABLE auth_user_user_permissions (
 );
 
 
-ALTER TABLE public.auth_user_user_permissions OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE auth_user_user_permissions_id_seq
@@ -392,24 +358,22 @@ CREATE SEQUENCE auth_user_user_permissions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_user_user_permissions_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE auth_user_user_permissions_id_seq OWNED BY auth_user_user_permissions.id;
 
 
 --
--- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('auth_user_user_permissions_id_seq', 1, false);
 
 
 --
--- Name: cms_cmsplugin; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_cmsplugin (
@@ -431,10 +395,8 @@ CREATE TABLE cms_cmsplugin (
 );
 
 
-ALTER TABLE public.cms_cmsplugin OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_cmsplugin_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_cmsplugin_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_cmsplugin_id_seq
@@ -445,24 +407,22 @@ CREATE SEQUENCE cms_cmsplugin_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_cmsplugin_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_cmsplugin_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_cmsplugin_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_cmsplugin_id_seq OWNED BY cms_cmsplugin.id;
 
 
 --
--- Name: cms_cmsplugin_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_cmsplugin_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_cmsplugin_id_seq', 49, true);
 
 
 --
--- Name: cms_globalpagepermission; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_globalpagepermission; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_globalpagepermission (
@@ -482,10 +442,8 @@ CREATE TABLE cms_globalpagepermission (
 );
 
 
-ALTER TABLE public.cms_globalpagepermission OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_globalpagepermission_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_globalpagepermission_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_globalpagepermission_id_seq
@@ -496,24 +454,22 @@ CREATE SEQUENCE cms_globalpagepermission_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_globalpagepermission_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_globalpagepermission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_globalpagepermission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_globalpagepermission_id_seq OWNED BY cms_globalpagepermission.id;
 
 
 --
--- Name: cms_globalpagepermission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_globalpagepermission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_globalpagepermission_id_seq', 1, false);
 
 
 --
--- Name: cms_globalpagepermission_sites; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_globalpagepermission_sites; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_globalpagepermission_sites (
@@ -523,10 +479,8 @@ CREATE TABLE cms_globalpagepermission_sites (
 );
 
 
-ALTER TABLE public.cms_globalpagepermission_sites OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_globalpagepermission_sites_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_globalpagepermission_sites_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_globalpagepermission_sites_id_seq
@@ -537,24 +491,22 @@ CREATE SEQUENCE cms_globalpagepermission_sites_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_globalpagepermission_sites_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_globalpagepermission_sites_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_globalpagepermission_sites_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_globalpagepermission_sites_id_seq OWNED BY cms_globalpagepermission_sites.id;
 
 
 --
--- Name: cms_globalpagepermission_sites_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_globalpagepermission_sites_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_globalpagepermission_sites_id_seq', 1, false);
 
 
 --
--- Name: cms_page; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_page (
@@ -590,10 +542,8 @@ CREATE TABLE cms_page (
 );
 
 
-ALTER TABLE public.cms_page OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_page_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_page_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_page_id_seq
@@ -604,24 +554,22 @@ CREATE SEQUENCE cms_page_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_page_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_page_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_page_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_page_id_seq OWNED BY cms_page.id;
 
 
 --
--- Name: cms_page_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_page_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_page_id_seq', 6, true);
 
 
 --
--- Name: cms_page_placeholders; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_placeholders; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_page_placeholders (
@@ -631,10 +579,8 @@ CREATE TABLE cms_page_placeholders (
 );
 
 
-ALTER TABLE public.cms_page_placeholders OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_page_placeholders_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_page_placeholders_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_page_placeholders_id_seq
@@ -645,24 +591,22 @@ CREATE SEQUENCE cms_page_placeholders_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_page_placeholders_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_page_placeholders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_page_placeholders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_page_placeholders_id_seq OWNED BY cms_page_placeholders.id;
 
 
 --
--- Name: cms_page_placeholders_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_page_placeholders_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_page_placeholders_id_seq', 159, true);
 
 
 --
--- Name: cms_pagemoderator; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagemoderator; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_pagemoderator (
@@ -675,10 +619,8 @@ CREATE TABLE cms_pagemoderator (
 );
 
 
-ALTER TABLE public.cms_pagemoderator OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_pagemoderator_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagemoderator_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_pagemoderator_id_seq
@@ -689,24 +631,22 @@ CREATE SEQUENCE cms_pagemoderator_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_pagemoderator_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_pagemoderator_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagemoderator_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_pagemoderator_id_seq OWNED BY cms_pagemoderator.id;
 
 
 --
--- Name: cms_pagemoderator_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagemoderator_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_pagemoderator_id_seq', 1, false);
 
 
 --
--- Name: cms_pagemoderatorstate; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagemoderatorstate; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_pagemoderatorstate (
@@ -719,10 +659,8 @@ CREATE TABLE cms_pagemoderatorstate (
 );
 
 
-ALTER TABLE public.cms_pagemoderatorstate OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_pagemoderatorstate_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagemoderatorstate_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_pagemoderatorstate_id_seq
@@ -733,24 +671,22 @@ CREATE SEQUENCE cms_pagemoderatorstate_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_pagemoderatorstate_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_pagemoderatorstate_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagemoderatorstate_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_pagemoderatorstate_id_seq OWNED BY cms_pagemoderatorstate.id;
 
 
 --
--- Name: cms_pagemoderatorstate_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagemoderatorstate_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_pagemoderatorstate_id_seq', 1, false);
 
 
 --
--- Name: cms_pagepermission; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagepermission; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_pagepermission (
@@ -771,10 +707,8 @@ CREATE TABLE cms_pagepermission (
 );
 
 
-ALTER TABLE public.cms_pagepermission OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_pagepermission_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagepermission_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_pagepermission_id_seq
@@ -785,24 +719,22 @@ CREATE SEQUENCE cms_pagepermission_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_pagepermission_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_pagepermission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagepermission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_pagepermission_id_seq OWNED BY cms_pagepermission.id;
 
 
 --
--- Name: cms_pagepermission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_pagepermission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_pagepermission_id_seq', 1, false);
 
 
 --
--- Name: cms_pageuser; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pageuser; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_pageuser (
@@ -811,10 +743,8 @@ CREATE TABLE cms_pageuser (
 );
 
 
-ALTER TABLE public.cms_pageuser OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_pageusergroup; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pageusergroup; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_pageusergroup (
@@ -823,10 +753,8 @@ CREATE TABLE cms_pageusergroup (
 );
 
 
-ALTER TABLE public.cms_pageusergroup OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_placeholder; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_placeholder; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_placeholder (
@@ -837,10 +765,8 @@ CREATE TABLE cms_placeholder (
 );
 
 
-ALTER TABLE public.cms_placeholder OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_placeholder_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_placeholder_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_placeholder_id_seq
@@ -851,24 +777,22 @@ CREATE SEQUENCE cms_placeholder_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_placeholder_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_placeholder_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_placeholder_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_placeholder_id_seq OWNED BY cms_placeholder.id;
 
 
 --
--- Name: cms_placeholder_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_placeholder_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_placeholder_id_seq', 83, true);
 
 
 --
--- Name: cms_title; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cms_title (
@@ -889,10 +813,8 @@ CREATE TABLE cms_title (
 );
 
 
-ALTER TABLE public.cms_title OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_title_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_title_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cms_title_id_seq
@@ -903,24 +825,22 @@ CREATE SEQUENCE cms_title_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cms_title_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cms_title_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_title_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cms_title_id_seq OWNED BY cms_title.id;
 
 
 --
--- Name: cms_title_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cms_title_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cms_title_id_seq', 6, true);
 
 
 --
--- Name: cmsplugin_categoryentriesplugin; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_categoryentriesplugin; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_categoryentriesplugin (
@@ -930,10 +850,8 @@ CREATE TABLE cmsplugin_categoryentriesplugin (
 );
 
 
-ALTER TABLE public.cmsplugin_categoryentriesplugin OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_file; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_file; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_file (
@@ -943,10 +861,8 @@ CREATE TABLE cmsplugin_file (
 );
 
 
-ALTER TABLE public.cmsplugin_file OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_flash; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_flash; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_flash (
@@ -957,10 +873,8 @@ CREATE TABLE cmsplugin_flash (
 );
 
 
-ALTER TABLE public.cmsplugin_flash OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_googlemap; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_googlemap; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_googlemap (
@@ -978,10 +892,8 @@ CREATE TABLE cmsplugin_googlemap (
 );
 
 
-ALTER TABLE public.cmsplugin_googlemap OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_imagestorealbumcarousel; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_imagestorealbumcarousel; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_imagestorealbumcarousel (
@@ -995,10 +907,8 @@ CREATE TABLE cmsplugin_imagestorealbumcarousel (
 );
 
 
-ALTER TABLE public.cmsplugin_imagestorealbumcarousel OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_imagestorealbumptr; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_imagestorealbumptr; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_imagestorealbumptr (
@@ -1007,10 +917,8 @@ CREATE TABLE cmsplugin_imagestorealbumptr (
 );
 
 
-ALTER TABLE public.cmsplugin_imagestorealbumptr OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_latestentriesplugin; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_latestentriesplugin; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_latestentriesplugin (
@@ -1021,10 +929,8 @@ CREATE TABLE cmsplugin_latestentriesplugin (
 );
 
 
-ALTER TABLE public.cmsplugin_latestentriesplugin OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_link; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_link; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_link (
@@ -1036,10 +942,8 @@ CREATE TABLE cmsplugin_link (
 );
 
 
-ALTER TABLE public.cmsplugin_link OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_picture; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_picture; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_picture (
@@ -1053,10 +957,8 @@ CREATE TABLE cmsplugin_picture (
 );
 
 
-ALTER TABLE public.cmsplugin_picture OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_randomentriesplugin; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_randomentriesplugin; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_randomentriesplugin (
@@ -1066,10 +968,8 @@ CREATE TABLE cmsplugin_randomentriesplugin (
 );
 
 
-ALTER TABLE public.cmsplugin_randomentriesplugin OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_selectedentriesplugin; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_selectedentriesplugin; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_selectedentriesplugin (
@@ -1078,10 +978,8 @@ CREATE TABLE cmsplugin_selectedentriesplugin (
 );
 
 
-ALTER TABLE public.cmsplugin_selectedentriesplugin OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_snippetptr; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_snippetptr; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_snippetptr (
@@ -1090,10 +988,8 @@ CREATE TABLE cmsplugin_snippetptr (
 );
 
 
-ALTER TABLE public.cmsplugin_snippetptr OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_teaser; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_teaser; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_teaser (
@@ -1106,10 +1002,8 @@ CREATE TABLE cmsplugin_teaser (
 );
 
 
-ALTER TABLE public.cmsplugin_teaser OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_text; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_text; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_text (
@@ -1118,10 +1012,8 @@ CREATE TABLE cmsplugin_text (
 );
 
 
-ALTER TABLE public.cmsplugin_text OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_twitterrecententries; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_twitterrecententries; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_twitterrecententries (
@@ -1134,10 +1026,8 @@ CREATE TABLE cmsplugin_twitterrecententries (
 );
 
 
-ALTER TABLE public.cmsplugin_twitterrecententries OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_twittersearch; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_twittersearch; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_twittersearch (
@@ -1149,10 +1039,8 @@ CREATE TABLE cmsplugin_twittersearch (
 );
 
 
-ALTER TABLE public.cmsplugin_twittersearch OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_video; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_video; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_video (
@@ -1177,10 +1065,8 @@ CREATE TABLE cmsplugin_video (
 );
 
 
-ALTER TABLE public.cmsplugin_video OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_authors; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_authors; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_zinnia_latestentriesplugin_authors (
@@ -1190,10 +1076,8 @@ CREATE TABLE cmsplugin_zinnia_latestentriesplugin_authors (
 );
 
 
-ALTER TABLE public.cmsplugin_zinnia_latestentriesplugin_authors OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_authors_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_authors_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cmsplugin_zinnia_latestentriesplugin_authors_id_seq
@@ -1204,24 +1088,22 @@ CREATE SEQUENCE cmsplugin_zinnia_latestentriesplugin_authors_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cmsplugin_zinnia_latestentriesplugin_authors_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_authors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_authors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cmsplugin_zinnia_latestentriesplugin_authors_id_seq OWNED BY cmsplugin_zinnia_latestentriesplugin_authors.id;
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_authors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_authors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cmsplugin_zinnia_latestentriesplugin_authors_id_seq', 1, false);
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_categories; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_categories; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_zinnia_latestentriesplugin_categories (
@@ -1231,10 +1113,8 @@ CREATE TABLE cmsplugin_zinnia_latestentriesplugin_categories (
 );
 
 
-ALTER TABLE public.cmsplugin_zinnia_latestentriesplugin_categories OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cmsplugin_zinnia_latestentriesplugin_categories_id_seq
@@ -1245,24 +1125,22 @@ CREATE SEQUENCE cmsplugin_zinnia_latestentriesplugin_categories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cmsplugin_zinnia_latestentriesplugin_categories_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cmsplugin_zinnia_latestentriesplugin_categories_id_seq OWNED BY cmsplugin_zinnia_latestentriesplugin_categories.id;
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cmsplugin_zinnia_latestentriesplugin_categories_id_seq', 1, false);
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_tags; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_tags; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_zinnia_latestentriesplugin_tags (
@@ -1272,10 +1150,8 @@ CREATE TABLE cmsplugin_zinnia_latestentriesplugin_tags (
 );
 
 
-ALTER TABLE public.cmsplugin_zinnia_latestentriesplugin_tags OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_tags_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_tags_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cmsplugin_zinnia_latestentriesplugin_tags_id_seq
@@ -1286,24 +1162,22 @@ CREATE SEQUENCE cmsplugin_zinnia_latestentriesplugin_tags_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cmsplugin_zinnia_latestentriesplugin_tags_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_tags_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_tags_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cmsplugin_zinnia_latestentriesplugin_tags_id_seq OWNED BY cmsplugin_zinnia_latestentriesplugin_tags.id;
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_tags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_latestentriesplugin_tags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cmsplugin_zinnia_latestentriesplugin_tags_id_seq', 1, false);
 
 
 --
--- Name: cmsplugin_zinnia_selectedentriesplugin_entries; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_selectedentriesplugin_entries; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE cmsplugin_zinnia_selectedentriesplugin_entries (
@@ -1313,10 +1187,8 @@ CREATE TABLE cmsplugin_zinnia_selectedentriesplugin_entries (
 );
 
 
-ALTER TABLE public.cmsplugin_zinnia_selectedentriesplugin_entries OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_selectedentriesplugin_entries_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_selectedentriesplugin_entries_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE cmsplugin_zinnia_selectedentriesplugin_entries_id_seq
@@ -1327,24 +1199,22 @@ CREATE SEQUENCE cmsplugin_zinnia_selectedentriesplugin_entries_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cmsplugin_zinnia_selectedentriesplugin_entries_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: cmsplugin_zinnia_selectedentriesplugin_entries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_selectedentriesplugin_entries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE cmsplugin_zinnia_selectedentriesplugin_entries_id_seq OWNED BY cmsplugin_zinnia_selectedentriesplugin_entries.id;
 
 
 --
--- Name: cmsplugin_zinnia_selectedentriesplugin_entries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_zinnia_selectedentriesplugin_entries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('cmsplugin_zinnia_selectedentriesplugin_entries_id_seq', 1, false);
 
 
 --
--- Name: django_admin_log; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_admin_log; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE django_admin_log (
@@ -1360,10 +1230,8 @@ CREATE TABLE django_admin_log (
 );
 
 
-ALTER TABLE public.django_admin_log OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_admin_log_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_admin_log_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE django_admin_log_id_seq
@@ -1374,24 +1242,22 @@ CREATE SEQUENCE django_admin_log_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_admin_log_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_admin_log_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_admin_log_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE django_admin_log_id_seq OWNED BY django_admin_log.id;
 
 
 --
--- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('django_admin_log_id_seq', 1, false);
 
 
 --
--- Name: django_comment_flags; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comment_flags; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE django_comment_flags (
@@ -1403,10 +1269,8 @@ CREATE TABLE django_comment_flags (
 );
 
 
-ALTER TABLE public.django_comment_flags OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_comment_flags_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comment_flags_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE django_comment_flags_id_seq
@@ -1417,24 +1281,22 @@ CREATE SEQUENCE django_comment_flags_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_comment_flags_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_comment_flags_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comment_flags_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE django_comment_flags_id_seq OWNED BY django_comment_flags.id;
 
 
 --
--- Name: django_comment_flags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comment_flags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('django_comment_flags_id_seq', 1, false);
 
 
 --
--- Name: django_comments; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comments; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE django_comments (
@@ -1454,10 +1316,8 @@ CREATE TABLE django_comments (
 );
 
 
-ALTER TABLE public.django_comments OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_comments_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comments_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE django_comments_id_seq
@@ -1468,24 +1328,22 @@ CREATE SEQUENCE django_comments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_comments_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_comments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE django_comments_id_seq OWNED BY django_comments.id;
 
 
 --
--- Name: django_comments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('django_comments_id_seq', 1, false);
 
 
 --
--- Name: django_content_type; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_content_type; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE django_content_type (
@@ -1496,10 +1354,8 @@ CREATE TABLE django_content_type (
 );
 
 
-ALTER TABLE public.django_content_type OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_content_type_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_content_type_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE django_content_type_id_seq
@@ -1510,24 +1366,22 @@ CREATE SEQUENCE django_content_type_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_content_type_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_content_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_content_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE django_content_type_id_seq OWNED BY django_content_type.id;
 
 
 --
--- Name: django_content_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_content_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('django_content_type_id_seq', 83, true);
 
 
 --
--- Name: django_session; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_session; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE django_session (
@@ -1537,10 +1391,8 @@ CREATE TABLE django_session (
 );
 
 
-ALTER TABLE public.django_session OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_site; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_site; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE django_site (
@@ -1550,10 +1402,8 @@ CREATE TABLE django_site (
 );
 
 
-ALTER TABLE public.django_site OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_site_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_site_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE django_site_id_seq
@@ -1564,24 +1414,22 @@ CREATE SEQUENCE django_site_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_site_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: django_site_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_site_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE django_site_id_seq OWNED BY django_site.id;
 
 
 --
--- Name: django_site_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_site_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('django_site_id_seq', 1, true);
 
 
 --
--- Name: imagestore_album; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_album; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE imagestore_album (
@@ -1596,10 +1444,8 @@ CREATE TABLE imagestore_album (
 );
 
 
-ALTER TABLE public.imagestore_album OWNER TO maurobianchi_webuser;
-
 --
--- Name: imagestore_album_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_album_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE imagestore_album_id_seq
@@ -1610,24 +1456,22 @@ CREATE SEQUENCE imagestore_album_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.imagestore_album_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: imagestore_album_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_album_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE imagestore_album_id_seq OWNED BY imagestore_album.id;
 
 
 --
--- Name: imagestore_album_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_album_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('imagestore_album_id_seq', 1, false);
 
 
 --
--- Name: imagestore_albumupload; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_albumupload; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE imagestore_albumupload (
@@ -1639,10 +1483,8 @@ CREATE TABLE imagestore_albumupload (
 );
 
 
-ALTER TABLE public.imagestore_albumupload OWNER TO maurobianchi_webuser;
-
 --
--- Name: imagestore_albumupload_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_albumupload_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE imagestore_albumupload_id_seq
@@ -1653,24 +1495,22 @@ CREATE SEQUENCE imagestore_albumupload_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.imagestore_albumupload_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: imagestore_albumupload_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_albumupload_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE imagestore_albumupload_id_seq OWNED BY imagestore_albumupload.id;
 
 
 --
--- Name: imagestore_albumupload_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_albumupload_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('imagestore_albumupload_id_seq', 1, false);
 
 
 --
--- Name: imagestore_image; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_image; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE imagestore_image (
@@ -1687,10 +1527,8 @@ CREATE TABLE imagestore_image (
 );
 
 
-ALTER TABLE public.imagestore_image OWNER TO maurobianchi_webuser;
-
 --
--- Name: imagestore_image_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_image_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE imagestore_image_id_seq
@@ -1701,24 +1539,22 @@ CREATE SEQUENCE imagestore_image_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.imagestore_image_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: imagestore_image_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_image_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE imagestore_image_id_seq OWNED BY imagestore_image.id;
 
 
 --
--- Name: imagestore_image_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: imagestore_image_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('imagestore_image_id_seq', 1, false);
 
 
 --
--- Name: menus_cachekey; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: menus_cachekey; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE menus_cachekey (
@@ -1730,10 +1566,8 @@ CREATE TABLE menus_cachekey (
 );
 
 
-ALTER TABLE public.menus_cachekey OWNER TO maurobianchi_webuser;
-
 --
--- Name: menus_cachekey_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: menus_cachekey_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE menus_cachekey_id_seq
@@ -1744,24 +1578,22 @@ CREATE SEQUENCE menus_cachekey_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.menus_cachekey_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: menus_cachekey_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: menus_cachekey_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE menus_cachekey_id_seq OWNED BY menus_cachekey.id;
 
 
 --
--- Name: menus_cachekey_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: menus_cachekey_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('menus_cachekey_id_seq', 1, false);
 
 
 --
--- Name: snippet_snippet; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: snippet_snippet; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE snippet_snippet (
@@ -1772,10 +1604,8 @@ CREATE TABLE snippet_snippet (
 );
 
 
-ALTER TABLE public.snippet_snippet OWNER TO maurobianchi_webuser;
-
 --
--- Name: snippet_snippet_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: snippet_snippet_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE snippet_snippet_id_seq
@@ -1786,24 +1616,22 @@ CREATE SEQUENCE snippet_snippet_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.snippet_snippet_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: snippet_snippet_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: snippet_snippet_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE snippet_snippet_id_seq OWNED BY snippet_snippet.id;
 
 
 --
--- Name: snippet_snippet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: snippet_snippet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('snippet_snippet_id_seq', 1, false);
 
 
 --
--- Name: south_migrationhistory; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: south_migrationhistory; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE south_migrationhistory (
@@ -1814,10 +1642,8 @@ CREATE TABLE south_migrationhistory (
 );
 
 
-ALTER TABLE public.south_migrationhistory OWNER TO maurobianchi_webuser;
-
 --
--- Name: south_migrationhistory_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: south_migrationhistory_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE south_migrationhistory_id_seq
@@ -1828,24 +1654,22 @@ CREATE SEQUENCE south_migrationhistory_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.south_migrationhistory_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: south_migrationhistory_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: south_migrationhistory_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE south_migrationhistory_id_seq OWNED BY south_migrationhistory.id;
 
 
 --
--- Name: south_migrationhistory_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: south_migrationhistory_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('south_migrationhistory_id_seq', 125, true);
 
 
 --
--- Name: tagging_tag; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_tag; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE tagging_tag (
@@ -1854,10 +1678,8 @@ CREATE TABLE tagging_tag (
 );
 
 
-ALTER TABLE public.tagging_tag OWNER TO maurobianchi_webuser;
-
 --
--- Name: tagging_tag_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: tagging_tag_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE tagging_tag_id_seq
@@ -1868,24 +1690,22 @@ CREATE SEQUENCE tagging_tag_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.tagging_tag_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: tagging_tag_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: tagging_tag_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE tagging_tag_id_seq OWNED BY tagging_tag.id;
 
 
 --
--- Name: tagging_tag_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: tagging_tag_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('tagging_tag_id_seq', 1, false);
 
 
 --
--- Name: tagging_taggeditem; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_taggeditem; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE tagging_taggeditem (
@@ -1897,10 +1717,8 @@ CREATE TABLE tagging_taggeditem (
 );
 
 
-ALTER TABLE public.tagging_taggeditem OWNER TO maurobianchi_webuser;
-
 --
--- Name: tagging_taggeditem_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: tagging_taggeditem_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE tagging_taggeditem_id_seq
@@ -1911,24 +1729,22 @@ CREATE SEQUENCE tagging_taggeditem_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.tagging_taggeditem_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: tagging_taggeditem_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: tagging_taggeditem_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE tagging_taggeditem_id_seq OWNED BY tagging_taggeditem.id;
 
 
 --
--- Name: tagging_taggeditem_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: tagging_taggeditem_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('tagging_taggeditem_id_seq', 1, false);
 
 
 --
--- Name: thumbnail_kvstore; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: thumbnail_kvstore; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE thumbnail_kvstore (
@@ -1937,10 +1753,8 @@ CREATE TABLE thumbnail_kvstore (
 );
 
 
-ALTER TABLE public.thumbnail_kvstore OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_category; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE zinnia_category (
@@ -1960,10 +1774,8 @@ CREATE TABLE zinnia_category (
 );
 
 
-ALTER TABLE public.zinnia_category OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_category_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_category_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE zinnia_category_id_seq
@@ -1974,24 +1786,22 @@ CREATE SEQUENCE zinnia_category_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.zinnia_category_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_category_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_category_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE zinnia_category_id_seq OWNED BY zinnia_category.id;
 
 
 --
--- Name: zinnia_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('zinnia_category_id_seq', 1, false);
 
 
 --
--- Name: zinnia_entry; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE zinnia_entry (
@@ -2016,10 +1826,8 @@ CREATE TABLE zinnia_entry (
 );
 
 
-ALTER TABLE public.zinnia_entry OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_authors; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_authors; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE zinnia_entry_authors (
@@ -2029,10 +1837,8 @@ CREATE TABLE zinnia_entry_authors (
 );
 
 
-ALTER TABLE public.zinnia_entry_authors OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_authors_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_authors_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE zinnia_entry_authors_id_seq
@@ -2043,24 +1849,22 @@ CREATE SEQUENCE zinnia_entry_authors_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.zinnia_entry_authors_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_authors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_authors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE zinnia_entry_authors_id_seq OWNED BY zinnia_entry_authors.id;
 
 
 --
--- Name: zinnia_entry_authors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_authors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('zinnia_entry_authors_id_seq', 1, false);
 
 
 --
--- Name: zinnia_entry_categories; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_categories; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE zinnia_entry_categories (
@@ -2070,10 +1874,8 @@ CREATE TABLE zinnia_entry_categories (
 );
 
 
-ALTER TABLE public.zinnia_entry_categories OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE zinnia_entry_categories_id_seq
@@ -2084,24 +1886,22 @@ CREATE SEQUENCE zinnia_entry_categories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.zinnia_entry_categories_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE zinnia_entry_categories_id_seq OWNED BY zinnia_entry_categories.id;
 
 
 --
--- Name: zinnia_entry_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('zinnia_entry_categories_id_seq', 1, false);
 
 
 --
--- Name: zinnia_entry_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE zinnia_entry_id_seq
@@ -2112,24 +1912,22 @@ CREATE SEQUENCE zinnia_entry_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.zinnia_entry_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE zinnia_entry_id_seq OWNED BY zinnia_entry.id;
 
 
 --
--- Name: zinnia_entry_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('zinnia_entry_id_seq', 1, false);
 
 
 --
--- Name: zinnia_entry_related; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_related; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE zinnia_entry_related (
@@ -2139,10 +1937,8 @@ CREATE TABLE zinnia_entry_related (
 );
 
 
-ALTER TABLE public.zinnia_entry_related OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_related_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_related_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE zinnia_entry_related_id_seq
@@ -2153,24 +1949,22 @@ CREATE SEQUENCE zinnia_entry_related_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.zinnia_entry_related_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_related_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_related_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE zinnia_entry_related_id_seq OWNED BY zinnia_entry_related.id;
 
 
 --
--- Name: zinnia_entry_related_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_related_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('zinnia_entry_related_id_seq', 1, false);
 
 
 --
--- Name: zinnia_entry_sites; Type: TABLE; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_sites; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE zinnia_entry_sites (
@@ -2180,10 +1974,8 @@ CREATE TABLE zinnia_entry_sites (
 );
 
 
-ALTER TABLE public.zinnia_entry_sites OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_sites_id_seq; Type: SEQUENCE; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_sites_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE zinnia_entry_sites_id_seq
@@ -2194,318 +1986,316 @@ CREATE SEQUENCE zinnia_entry_sites_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.zinnia_entry_sites_id_seq OWNER TO maurobianchi_webuser;
-
 --
--- Name: zinnia_entry_sites_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_sites_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE zinnia_entry_sites_id_seq OWNED BY zinnia_entry_sites.id;
 
 
 --
--- Name: zinnia_entry_sites_id_seq; Type: SEQUENCE SET; Schema: public; Owner: maurobianchi_webuser
+-- Name: zinnia_entry_sites_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('zinnia_entry_sites_id_seq', 1, false);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE admin_tools_dashboard_preferences ALTER COLUMN id SET DEFAULT nextval('admin_tools_dashboard_preferences_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE admin_tools_menu_bookmark ALTER COLUMN id SET DEFAULT nextval('admin_tools_menu_bookmark_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE auth_group ALTER COLUMN id SET DEFAULT nextval('auth_group_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE auth_group_permissions ALTER COLUMN id SET DEFAULT nextval('auth_group_permissions_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE auth_message ALTER COLUMN id SET DEFAULT nextval('auth_message_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE auth_permission ALTER COLUMN id SET DEFAULT nextval('auth_permission_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE auth_user ALTER COLUMN id SET DEFAULT nextval('auth_user_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE auth_user_groups ALTER COLUMN id SET DEFAULT nextval('auth_user_groups_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE auth_user_user_permissions ALTER COLUMN id SET DEFAULT nextval('auth_user_user_permissions_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_cmsplugin ALTER COLUMN id SET DEFAULT nextval('cms_cmsplugin_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_globalpagepermission ALTER COLUMN id SET DEFAULT nextval('cms_globalpagepermission_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_globalpagepermission_sites ALTER COLUMN id SET DEFAULT nextval('cms_globalpagepermission_sites_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_page ALTER COLUMN id SET DEFAULT nextval('cms_page_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_page_placeholders ALTER COLUMN id SET DEFAULT nextval('cms_page_placeholders_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_pagemoderator ALTER COLUMN id SET DEFAULT nextval('cms_pagemoderator_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_pagemoderatorstate ALTER COLUMN id SET DEFAULT nextval('cms_pagemoderatorstate_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_pagepermission ALTER COLUMN id SET DEFAULT nextval('cms_pagepermission_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_placeholder ALTER COLUMN id SET DEFAULT nextval('cms_placeholder_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cms_title ALTER COLUMN id SET DEFAULT nextval('cms_title_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cmsplugin_zinnia_latestentriesplugin_authors ALTER COLUMN id SET DEFAULT nextval('cmsplugin_zinnia_latestentriesplugin_authors_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cmsplugin_zinnia_latestentriesplugin_categories ALTER COLUMN id SET DEFAULT nextval('cmsplugin_zinnia_latestentriesplugin_categories_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cmsplugin_zinnia_latestentriesplugin_tags ALTER COLUMN id SET DEFAULT nextval('cmsplugin_zinnia_latestentriesplugin_tags_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE cmsplugin_zinnia_selectedentriesplugin_entries ALTER COLUMN id SET DEFAULT nextval('cmsplugin_zinnia_selectedentriesplugin_entries_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE django_admin_log ALTER COLUMN id SET DEFAULT nextval('django_admin_log_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE django_comment_flags ALTER COLUMN id SET DEFAULT nextval('django_comment_flags_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE django_comments ALTER COLUMN id SET DEFAULT nextval('django_comments_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE django_content_type ALTER COLUMN id SET DEFAULT nextval('django_content_type_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE django_site ALTER COLUMN id SET DEFAULT nextval('django_site_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE imagestore_album ALTER COLUMN id SET DEFAULT nextval('imagestore_album_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE imagestore_albumupload ALTER COLUMN id SET DEFAULT nextval('imagestore_albumupload_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE imagestore_image ALTER COLUMN id SET DEFAULT nextval('imagestore_image_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE menus_cachekey ALTER COLUMN id SET DEFAULT nextval('menus_cachekey_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE snippet_snippet ALTER COLUMN id SET DEFAULT nextval('snippet_snippet_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE south_migrationhistory ALTER COLUMN id SET DEFAULT nextval('south_migrationhistory_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE tagging_tag ALTER COLUMN id SET DEFAULT nextval('tagging_tag_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE tagging_taggeditem ALTER COLUMN id SET DEFAULT nextval('tagging_taggeditem_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE zinnia_category ALTER COLUMN id SET DEFAULT nextval('zinnia_category_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE zinnia_entry ALTER COLUMN id SET DEFAULT nextval('zinnia_entry_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE zinnia_entry_authors ALTER COLUMN id SET DEFAULT nextval('zinnia_entry_authors_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE zinnia_entry_categories ALTER COLUMN id SET DEFAULT nextval('zinnia_entry_categories_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE zinnia_entry_related ALTER COLUMN id SET DEFAULT nextval('zinnia_entry_related_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: maurobianchi_webuser
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE zinnia_entry_sites ALTER COLUMN id SET DEFAULT nextval('zinnia_entry_sites_id_seq'::regclass);
 
 
 --
--- Data for Name: admin_tools_dashboard_preferences; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: admin_tools_dashboard_preferences; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY admin_tools_dashboard_preferences (id, user_id, data, dashboard_id) FROM stdin;
@@ -2513,7 +2303,7 @@ COPY admin_tools_dashboard_preferences (id, user_id, data, dashboard_id) FROM st
 
 
 --
--- Data for Name: admin_tools_menu_bookmark; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: admin_tools_menu_bookmark; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY admin_tools_menu_bookmark (id, user_id, url, title) FROM stdin;
@@ -2521,7 +2311,7 @@ COPY admin_tools_menu_bookmark (id, user_id, url, title) FROM stdin;
 
 
 --
--- Data for Name: auth_group; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: auth_group; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY auth_group (id, name) FROM stdin;
@@ -2529,7 +2319,7 @@ COPY auth_group (id, name) FROM stdin;
 
 
 --
--- Data for Name: auth_group_permissions; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: auth_group_permissions; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY auth_group_permissions (id, group_id, permission_id) FROM stdin;
@@ -2537,7 +2327,7 @@ COPY auth_group_permissions (id, group_id, permission_id) FROM stdin;
 
 
 --
--- Data for Name: auth_message; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: auth_message; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY auth_message (id, user_id, message) FROM stdin;
@@ -2545,7 +2335,7 @@ COPY auth_message (id, user_id, message) FROM stdin;
 
 
 --
--- Data for Name: auth_permission; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: auth_permission; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY auth_permission (id, name, content_type_id, codename) FROM stdin;
@@ -2608,7 +2398,7 @@ COPY auth_permission (id, name, content_type_id, codename) FROM stdin;
 
 
 --
--- Data for Name: auth_user; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: auth_user; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY auth_user (id, username, first_name, last_name, email, password, is_staff, is_active, is_superuser, last_login, date_joined) FROM stdin;
@@ -2616,7 +2406,7 @@ COPY auth_user (id, username, first_name, last_name, email, password, is_staff, 
 
 
 --
--- Data for Name: auth_user_groups; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: auth_user_groups; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY auth_user_groups (id, user_id, group_id) FROM stdin;
@@ -2624,7 +2414,7 @@ COPY auth_user_groups (id, user_id, group_id) FROM stdin;
 
 
 --
--- Data for Name: auth_user_user_permissions; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: auth_user_user_permissions; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY auth_user_user_permissions (id, user_id, permission_id) FROM stdin;
@@ -2632,7 +2422,7 @@ COPY auth_user_user_permissions (id, user_id, permission_id) FROM stdin;
 
 
 --
--- Data for Name: cms_cmsplugin; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_cmsplugin; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_cmsplugin (language, "position", creation_date, id, plugin_type, parent_id, tree_id, lft, rght, level, placeholder_id) FROM stdin;
@@ -2679,7 +2469,7 @@ en	\N	2013-02-02 12:41:01+01	49	TextPlugin	\N	45	1	2	0	63
 
 
 --
--- Data for Name: cms_globalpagepermission; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_globalpagepermission; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_globalpagepermission (can_publish, group_id, can_moderate, can_change, can_change_permissions, can_recover_page, can_add, user_id, can_delete, can_move_page, id, can_change_advanced_settings, can_view) FROM stdin;
@@ -2687,7 +2477,7 @@ COPY cms_globalpagepermission (can_publish, group_id, can_moderate, can_change, 
 
 
 --
--- Data for Name: cms_globalpagepermission_sites; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_globalpagepermission_sites; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_globalpagepermission_sites (id, globalpagepermission_id, site_id) FROM stdin;
@@ -2695,7 +2485,7 @@ COPY cms_globalpagepermission_sites (id, globalpagepermission_id, site_id) FROM 
 
 
 --
--- Data for Name: cms_page; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_page; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_page (rght, level, navigation_extenders, parent_id, reverse_id, login_required, soft_root, creation_date, lft, publication_end_date, template, tree_id, publication_date, in_navigation, id, moderator_state, published, site_id, changed_by, created_by, publisher_is_draft, publisher_state, publisher_public_id, limit_visibility_in_menu, changed_date) FROM stdin;
@@ -2708,7 +2498,7 @@ COPY cms_page (rght, level, navigation_extenders, parent_id, reverse_id, login_r
 
 
 --
--- Data for Name: cms_page_placeholders; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_page_placeholders; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_page_placeholders (id, page_id, placeholder_id) FROM stdin;
@@ -2735,7 +2525,7 @@ COPY cms_page_placeholders (id, page_id, placeholder_id) FROM stdin;
 
 
 --
--- Data for Name: cms_pagemoderator; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_pagemoderator; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_pagemoderator (moderate_page, moderate_children, page_id, user_id, id, moderate_descendants) FROM stdin;
@@ -2743,7 +2533,7 @@ COPY cms_pagemoderator (moderate_page, moderate_children, page_id, user_id, id, 
 
 
 --
--- Data for Name: cms_pagemoderatorstate; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_pagemoderatorstate; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_pagemoderatorstate (created, page_id, user_id, action, message, id) FROM stdin;
@@ -2751,7 +2541,7 @@ COPY cms_pagemoderatorstate (created, page_id, user_id, action, message, id) FRO
 
 
 --
--- Data for Name: cms_pagepermission; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_pagepermission; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_pagepermission (group_id, can_publish, page_id, user_id, id, can_delete, can_change_permissions, can_moderate, can_add, grant_on, can_move_page, can_change, can_change_advanced_settings, can_view) FROM stdin;
@@ -2759,7 +2549,7 @@ COPY cms_pagepermission (group_id, can_publish, page_id, user_id, id, can_delete
 
 
 --
--- Data for Name: cms_pageuser; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_pageuser; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_pageuser (user_ptr_id, created_by_id) FROM stdin;
@@ -2767,7 +2557,7 @@ COPY cms_pageuser (user_ptr_id, created_by_id) FROM stdin;
 
 
 --
--- Data for Name: cms_pageusergroup; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_pageusergroup; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_pageusergroup (group_ptr_id, created_by_id) FROM stdin;
@@ -2775,7 +2565,7 @@ COPY cms_pageusergroup (group_ptr_id, created_by_id) FROM stdin;
 
 
 --
--- Data for Name: cms_placeholder; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_placeholder; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_placeholder (slot, id, default_width) FROM stdin;
@@ -2863,7 +2653,7 @@ content	20	\N
 
 
 --
--- Data for Name: cms_title; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cms_title; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cms_title (language, title, page_id, id, path, creation_date, slug, has_url_overwrite, application_urls, redirect, meta_keywords, meta_description, page_title, menu_title) FROM stdin;
@@ -2876,7 +2666,7 @@ en	Cms Fragments test	6	6	cms-fragments-test	2012-03-24 16:35:27+01	cms-fragment
 
 
 --
--- Data for Name: cmsplugin_categoryentriesplugin; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_categoryentriesplugin; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_categoryentriesplugin (cmsplugin_ptr_id, category_id, number_of_entries) FROM stdin;
@@ -2884,7 +2674,7 @@ COPY cmsplugin_categoryentriesplugin (cmsplugin_ptr_id, category_id, number_of_e
 
 
 --
--- Data for Name: cmsplugin_file; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_file; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_file (cmsplugin_ptr_id, file, title) FROM stdin;
@@ -2892,7 +2682,7 @@ COPY cmsplugin_file (cmsplugin_ptr_id, file, title) FROM stdin;
 
 
 --
--- Data for Name: cmsplugin_flash; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_flash; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_flash (width, cmsplugin_ptr_id, file, height) FROM stdin;
@@ -2900,7 +2690,7 @@ COPY cmsplugin_flash (width, cmsplugin_ptr_id, file, height) FROM stdin;
 
 
 --
--- Data for Name: cmsplugin_googlemap; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_googlemap; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_googlemap (city, title, cmsplugin_ptr_id, zoom, content, address, zipcode, lng, lat, route_planer, route_planer_title) FROM stdin;
@@ -2908,7 +2698,7 @@ COPY cmsplugin_googlemap (city, title, cmsplugin_ptr_id, zoom, content, address,
 
 
 --
--- Data for Name: cmsplugin_imagestorealbumcarousel; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_imagestorealbumcarousel; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_imagestorealbumcarousel (cmsplugin_ptr_id, album_id, skin, "limit", size, full_size, template_file) FROM stdin;
@@ -2916,7 +2706,7 @@ COPY cmsplugin_imagestorealbumcarousel (cmsplugin_ptr_id, album_id, skin, "limit
 
 
 --
--- Data for Name: cmsplugin_imagestorealbumptr; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_imagestorealbumptr; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_imagestorealbumptr (cmsplugin_ptr_id, album_id) FROM stdin;
@@ -2924,7 +2714,7 @@ COPY cmsplugin_imagestorealbumptr (cmsplugin_ptr_id, album_id) FROM stdin;
 
 
 --
--- Data for Name: cmsplugin_latestentriesplugin; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_latestentriesplugin; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_latestentriesplugin (cmsplugin_ptr_id, subcategories, number_of_entries, template_to_render) FROM stdin;
@@ -2932,7 +2722,7 @@ COPY cmsplugin_latestentriesplugin (cmsplugin_ptr_id, subcategories, number_of_e
 
 
 --
--- Data for Name: cmsplugin_link; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_link; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_link (url, cmsplugin_ptr_id, name, page_link_id, mailto) FROM stdin;
@@ -2940,7 +2730,7 @@ COPY cmsplugin_link (url, cmsplugin_ptr_id, name, page_link_id, mailto) FROM std
 
 
 --
--- Data for Name: cmsplugin_picture; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_picture; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_picture (url, image, cmsplugin_ptr_id, alt, page_link_id, "float", longdesc) FROM stdin;
@@ -2950,7 +2740,7 @@ COPY cmsplugin_picture (url, image, cmsplugin_ptr_id, alt, page_link_id, "float"
 
 
 --
--- Data for Name: cmsplugin_randomentriesplugin; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_randomentriesplugin; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_randomentriesplugin (cmsplugin_ptr_id, number_of_entries, template_to_render) FROM stdin;
@@ -2958,7 +2748,7 @@ COPY cmsplugin_randomentriesplugin (cmsplugin_ptr_id, number_of_entries, templat
 
 
 --
--- Data for Name: cmsplugin_selectedentriesplugin; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_selectedentriesplugin; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_selectedentriesplugin (cmsplugin_ptr_id, template_to_render) FROM stdin;
@@ -2966,7 +2756,7 @@ COPY cmsplugin_selectedentriesplugin (cmsplugin_ptr_id, template_to_render) FROM
 
 
 --
--- Data for Name: cmsplugin_snippetptr; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_snippetptr; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_snippetptr (cmsplugin_ptr_id, snippet_id) FROM stdin;
@@ -2974,7 +2764,7 @@ COPY cmsplugin_snippetptr (cmsplugin_ptr_id, snippet_id) FROM stdin;
 
 
 --
--- Data for Name: cmsplugin_teaser; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_teaser; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_teaser (description, title, url, image, cmsplugin_ptr_id, page_link_id) FROM stdin;
@@ -2982,7 +2772,7 @@ COPY cmsplugin_teaser (description, title, url, image, cmsplugin_ptr_id, page_li
 
 
 --
--- Data for Name: cmsplugin_text; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_text; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_text (body, cmsplugin_ptr_id) FROM stdin;
@@ -3015,7 +2805,7 @@ COPY cmsplugin_text (body, cmsplugin_ptr_id) FROM stdin;
 
 
 --
--- Data for Name: cmsplugin_twitterrecententries; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_twitterrecententries; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_twitterrecententries (cmsplugin_ptr_id, title, twitter_user, count, link_hint) FROM stdin;
@@ -3023,7 +2813,7 @@ COPY cmsplugin_twitterrecententries (cmsplugin_ptr_id, title, twitter_user, coun
 
 
 --
--- Data for Name: cmsplugin_twittersearch; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_twittersearch; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_twittersearch (count, query, cmsplugin_ptr_id, title) FROM stdin;
@@ -3031,7 +2821,7 @@ COPY cmsplugin_twittersearch (count, query, cmsplugin_ptr_id, title) FROM stdin;
 
 
 --
--- Data for Name: cmsplugin_video; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_video; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_video (cmsplugin_ptr_id, movie, image, auto_play, loop, bgcolor, fullscreen, width, movie_url, buttonhighlightcolor, auto_hide, seekbarcolor, buttonoutcolor, textcolor, seekbarbgcolor, loadingbarcolor, buttonovercolor, height) FROM stdin;
@@ -3039,7 +2829,7 @@ COPY cmsplugin_video (cmsplugin_ptr_id, movie, image, auto_play, loop, bgcolor, 
 
 
 --
--- Data for Name: cmsplugin_zinnia_latestentriesplugin_authors; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_zinnia_latestentriesplugin_authors; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_zinnia_latestentriesplugin_authors (id, latestentriesplugin_id, user_id) FROM stdin;
@@ -3047,7 +2837,7 @@ COPY cmsplugin_zinnia_latestentriesplugin_authors (id, latestentriesplugin_id, u
 
 
 --
--- Data for Name: cmsplugin_zinnia_latestentriesplugin_categories; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_zinnia_latestentriesplugin_categories; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_zinnia_latestentriesplugin_categories (id, latestentriesplugin_id, category_id) FROM stdin;
@@ -3055,7 +2845,7 @@ COPY cmsplugin_zinnia_latestentriesplugin_categories (id, latestentriesplugin_id
 
 
 --
--- Data for Name: cmsplugin_zinnia_latestentriesplugin_tags; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_zinnia_latestentriesplugin_tags; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_zinnia_latestentriesplugin_tags (id, latestentriesplugin_id, tag_id) FROM stdin;
@@ -3063,7 +2853,7 @@ COPY cmsplugin_zinnia_latestentriesplugin_tags (id, latestentriesplugin_id, tag_
 
 
 --
--- Data for Name: cmsplugin_zinnia_selectedentriesplugin_entries; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: cmsplugin_zinnia_selectedentriesplugin_entries; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY cmsplugin_zinnia_selectedentriesplugin_entries (id, selectedentriesplugin_id, entry_id) FROM stdin;
@@ -3071,7 +2861,7 @@ COPY cmsplugin_zinnia_selectedentriesplugin_entries (id, selectedentriesplugin_i
 
 
 --
--- Data for Name: django_admin_log; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: django_admin_log; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, object_repr, action_flag, change_message) FROM stdin;
@@ -3079,7 +2869,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 
 
 --
--- Data for Name: django_comment_flags; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: django_comment_flags; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY django_comment_flags (id, user_id, comment_id, flag, flag_date) FROM stdin;
@@ -3087,7 +2877,7 @@ COPY django_comment_flags (id, user_id, comment_id, flag, flag_date) FROM stdin;
 
 
 --
--- Data for Name: django_comments; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: django_comments; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY django_comments (id, content_type_id, object_pk, site_id, user_id, user_name, user_email, user_url, comment, submit_date, ip_address, is_public, is_removed) FROM stdin;
@@ -3095,7 +2885,7 @@ COPY django_comments (id, content_type_id, object_pk, site_id, user_id, user_nam
 
 
 --
--- Data for Name: django_content_type; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: django_content_type; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY django_content_type (id, name, app_label, model) FROM stdin;
@@ -3121,7 +2911,7 @@ COPY django_content_type (id, name, app_label, model) FROM stdin;
 
 
 --
--- Data for Name: django_session; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: django_session; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY django_session (session_key, session_data, expire_date) FROM stdin;
@@ -3129,7 +2919,7 @@ COPY django_session (session_key, session_data, expire_date) FROM stdin;
 
 
 --
--- Data for Name: django_site; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: django_site; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY django_site (id, domain, name) FROM stdin;
@@ -3138,7 +2928,7 @@ COPY django_site (id, domain, name) FROM stdin;
 
 
 --
--- Data for Name: imagestore_album; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: imagestore_album; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY imagestore_album (id, name, created, updated, user_id, is_public, head_id, "order") FROM stdin;
@@ -3146,7 +2936,7 @@ COPY imagestore_album (id, name, created, updated, user_id, is_public, head_id, 
 
 
 --
--- Data for Name: imagestore_albumupload; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: imagestore_albumupload; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY imagestore_albumupload (id, zip_file, album_id, new_album_name, tags) FROM stdin;
@@ -3154,7 +2944,7 @@ COPY imagestore_albumupload (id, zip_file, album_id, new_album_name, tags) FROM 
 
 
 --
--- Data for Name: imagestore_image; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: imagestore_image; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY imagestore_image (id, title, description, tags, "order", image, user_id, created, updated, album_id) FROM stdin;
@@ -3162,7 +2952,7 @@ COPY imagestore_image (id, title, description, tags, "order", image, user_id, cr
 
 
 --
--- Data for Name: menus_cachekey; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: menus_cachekey; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY menus_cachekey (id, language, site, key) FROM stdin;
@@ -3170,7 +2960,7 @@ COPY menus_cachekey (id, language, site, key) FROM stdin;
 
 
 --
--- Data for Name: snippet_snippet; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: snippet_snippet; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY snippet_snippet (id, name, html, template) FROM stdin;
@@ -3178,7 +2968,7 @@ COPY snippet_snippet (id, name, html, template) FROM stdin;
 
 
 --
--- Data for Name: south_migrationhistory; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: south_migrationhistory; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY south_migrationhistory (id, app_name, migration, applied) FROM stdin;
@@ -3311,7 +3101,7 @@ COPY south_migrationhistory (id, app_name, migration, applied) FROM stdin;
 
 
 --
--- Data for Name: tagging_tag; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: tagging_tag; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY tagging_tag (id, name) FROM stdin;
@@ -3319,7 +3109,7 @@ COPY tagging_tag (id, name) FROM stdin;
 
 
 --
--- Data for Name: tagging_taggeditem; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: tagging_taggeditem; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY tagging_taggeditem (id, tag_id, content_type_id, object_id) FROM stdin;
@@ -3327,7 +3117,7 @@ COPY tagging_taggeditem (id, tag_id, content_type_id, object_id) FROM stdin;
 
 
 --
--- Data for Name: thumbnail_kvstore; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: thumbnail_kvstore; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY thumbnail_kvstore (key, value) FROM stdin;
@@ -3335,7 +3125,7 @@ COPY thumbnail_kvstore (key, value) FROM stdin;
 
 
 --
--- Data for Name: zinnia_category; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: zinnia_category; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY zinnia_category (slug, description, id, title, parent_id, lft, rght, tree_id, level) FROM stdin;
@@ -3343,7 +3133,7 @@ COPY zinnia_category (slug, description, id, title, parent_id, lft, rght, tree_i
 
 
 --
--- Data for Name: zinnia_entry; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: zinnia_entry; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY zinnia_entry (status, last_update, comment_enabled, tags, image, title, excerpt, slug, content, end_publication, start_publication, creation_date, id, pingback_enabled, login_required, password, template, featured) FROM stdin;
@@ -3351,7 +3141,7 @@ COPY zinnia_entry (status, last_update, comment_enabled, tags, image, title, exc
 
 
 --
--- Data for Name: zinnia_entry_authors; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: zinnia_entry_authors; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY zinnia_entry_authors (id, entry_id, user_id) FROM stdin;
@@ -3359,7 +3149,7 @@ COPY zinnia_entry_authors (id, entry_id, user_id) FROM stdin;
 
 
 --
--- Data for Name: zinnia_entry_categories; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: zinnia_entry_categories; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY zinnia_entry_categories (id, entry_id, category_id) FROM stdin;
@@ -3367,7 +3157,7 @@ COPY zinnia_entry_categories (id, entry_id, category_id) FROM stdin;
 
 
 --
--- Data for Name: zinnia_entry_related; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: zinnia_entry_related; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY zinnia_entry_related (id, from_entry_id, to_entry_id) FROM stdin;
@@ -3375,7 +3165,7 @@ COPY zinnia_entry_related (id, from_entry_id, to_entry_id) FROM stdin;
 
 
 --
--- Data for Name: zinnia_entry_sites; Type: TABLE DATA; Schema: public; Owner: maurobianchi_webuser
+-- Data for Name: zinnia_entry_sites; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY zinnia_entry_sites (id, entry_id, site_id) FROM stdin;
@@ -3383,7 +3173,7 @@ COPY zinnia_entry_sites (id, entry_id, site_id) FROM stdin;
 
 
 --
--- Name: admin_tools_dashboard_preferences_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: admin_tools_dashboard_preferences_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY admin_tools_dashboard_preferences
@@ -3391,7 +3181,7 @@ ALTER TABLE ONLY admin_tools_dashboard_preferences
 
 
 --
--- Name: admin_tools_menu_bookmark_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: admin_tools_menu_bookmark_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY admin_tools_menu_bookmark
@@ -3399,7 +3189,7 @@ ALTER TABLE ONLY admin_tools_menu_bookmark
 
 
 --
--- Name: auth_group_name_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_group_name_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_group
@@ -3407,7 +3197,7 @@ ALTER TABLE ONLY auth_group
 
 
 --
--- Name: auth_group_permissions_group_id_permission_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_group_permissions_group_id_permission_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_group_permissions
@@ -3415,7 +3205,7 @@ ALTER TABLE ONLY auth_group_permissions
 
 
 --
--- Name: auth_group_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_group_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_group_permissions
@@ -3423,7 +3213,7 @@ ALTER TABLE ONLY auth_group_permissions
 
 
 --
--- Name: auth_group_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_group_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_group
@@ -3431,7 +3221,7 @@ ALTER TABLE ONLY auth_group
 
 
 --
--- Name: auth_message_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_message_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_message
@@ -3439,7 +3229,7 @@ ALTER TABLE ONLY auth_message
 
 
 --
--- Name: auth_permission_content_type_id_codename_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_permission_content_type_id_codename_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_permission
@@ -3447,7 +3237,7 @@ ALTER TABLE ONLY auth_permission
 
 
 --
--- Name: auth_permission_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_permission_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_permission
@@ -3455,7 +3245,7 @@ ALTER TABLE ONLY auth_permission
 
 
 --
--- Name: auth_user_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_user_groups
@@ -3463,7 +3253,7 @@ ALTER TABLE ONLY auth_user_groups
 
 
 --
--- Name: auth_user_groups_user_id_group_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_groups_user_id_group_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_user_groups
@@ -3471,7 +3261,7 @@ ALTER TABLE ONLY auth_user_groups
 
 
 --
--- Name: auth_user_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_user
@@ -3479,7 +3269,7 @@ ALTER TABLE ONLY auth_user
 
 
 --
--- Name: auth_user_user_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_user_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_user_user_permissions
@@ -3487,7 +3277,7 @@ ALTER TABLE ONLY auth_user_user_permissions
 
 
 --
--- Name: auth_user_user_permissions_user_id_permission_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_user_permissions_user_id_permission_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_user_user_permissions
@@ -3495,7 +3285,7 @@ ALTER TABLE ONLY auth_user_user_permissions
 
 
 --
--- Name: auth_user_username_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_username_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY auth_user
@@ -3503,7 +3293,7 @@ ALTER TABLE ONLY auth_user
 
 
 --
--- Name: cms_cmsplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_cmsplugin
@@ -3511,7 +3301,7 @@ ALTER TABLE ONLY cms_cmsplugin
 
 
 --
--- Name: cms_globalpagepermission_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_globalpagepermission_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_globalpagepermission
@@ -3519,7 +3309,7 @@ ALTER TABLE ONLY cms_globalpagepermission
 
 
 --
--- Name: cms_globalpagepermission_sites_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_globalpagepermission_sites_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_globalpagepermission_sites
@@ -3527,7 +3317,7 @@ ALTER TABLE ONLY cms_globalpagepermission_sites
 
 
 --
--- Name: cms_page_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_page
@@ -3535,7 +3325,7 @@ ALTER TABLE ONLY cms_page
 
 
 --
--- Name: cms_page_placeholders_page_id_598353cf6a0df834_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_placeholders_page_id_598353cf6a0df834_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_page_placeholders
@@ -3543,7 +3333,7 @@ ALTER TABLE ONLY cms_page_placeholders
 
 
 --
--- Name: cms_page_placeholders_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_placeholders_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_page_placeholders
@@ -3551,7 +3341,7 @@ ALTER TABLE ONLY cms_page_placeholders
 
 
 --
--- Name: cms_page_publisher_public_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_publisher_public_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_page
@@ -3559,7 +3349,7 @@ ALTER TABLE ONLY cms_page
 
 
 --
--- Name: cms_pagemoderator_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagemoderator_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_pagemoderator
@@ -3567,7 +3357,7 @@ ALTER TABLE ONLY cms_pagemoderator
 
 
 --
--- Name: cms_pagemoderatorstate_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagemoderatorstate_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_pagemoderatorstate
@@ -3575,7 +3365,7 @@ ALTER TABLE ONLY cms_pagemoderatorstate
 
 
 --
--- Name: cms_pagepermission_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagepermission_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_pagepermission
@@ -3583,7 +3373,7 @@ ALTER TABLE ONLY cms_pagepermission
 
 
 --
--- Name: cms_pageuser_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pageuser_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_pageuser
@@ -3591,7 +3381,7 @@ ALTER TABLE ONLY cms_pageuser
 
 
 --
--- Name: cms_pageusergroup_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pageusergroup_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_pageusergroup
@@ -3599,7 +3389,7 @@ ALTER TABLE ONLY cms_pageusergroup
 
 
 --
--- Name: cms_placeholder_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_placeholder_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_placeholder
@@ -3607,7 +3397,7 @@ ALTER TABLE ONLY cms_placeholder
 
 
 --
--- Name: cms_title_page_id_45628dc0e8a26dd5_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_page_id_45628dc0e8a26dd5_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_title
@@ -3615,7 +3405,7 @@ ALTER TABLE ONLY cms_title
 
 
 --
--- Name: cms_title_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cms_title
@@ -3623,7 +3413,7 @@ ALTER TABLE ONLY cms_title
 
 
 --
--- Name: cmsplugin_categoryentriesplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_categoryentriesplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_categoryentriesplugin
@@ -3631,7 +3421,7 @@ ALTER TABLE ONLY cmsplugin_categoryentriesplugin
 
 
 --
--- Name: cmsplugin_googlemap_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_googlemap_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_googlemap
@@ -3639,7 +3429,7 @@ ALTER TABLE ONLY cmsplugin_googlemap
 
 
 --
--- Name: cmsplugin_imagestorealbumcarousel_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_imagestorealbumcarousel_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_imagestorealbumcarousel
@@ -3647,7 +3437,7 @@ ALTER TABLE ONLY cmsplugin_imagestorealbumcarousel
 
 
 --
--- Name: cmsplugin_imagestorealbumptr_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_imagestorealbumptr_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_imagestorealbumptr
@@ -3655,7 +3445,7 @@ ALTER TABLE ONLY cmsplugin_imagestorealbumptr
 
 
 --
--- Name: cmsplugin_latestentriesplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_latestentriesplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_latestentriesplugin
@@ -3663,7 +3453,7 @@ ALTER TABLE ONLY cmsplugin_latestentriesplugin
 
 
 --
--- Name: cmsplugin_randomentriesplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_randomentriesplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_randomentriesplugin
@@ -3671,7 +3461,7 @@ ALTER TABLE ONLY cmsplugin_randomentriesplugin
 
 
 --
--- Name: cmsplugin_selectedentriesplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_selectedentriesplugin_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_selectedentriesplugin
@@ -3679,7 +3469,7 @@ ALTER TABLE ONLY cmsplugin_selectedentriesplugin
 
 
 --
--- Name: cmsplugin_teaser_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_teaser_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_teaser
@@ -3687,7 +3477,7 @@ ALTER TABLE ONLY cmsplugin_teaser
 
 
 --
--- Name: cmsplugin_twitterrecententries_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_twitterrecententries_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_twitterrecententries
@@ -3695,7 +3485,7 @@ ALTER TABLE ONLY cmsplugin_twitterrecententries
 
 
 --
--- Name: cmsplugin_twittersearch_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_twittersearch_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_twittersearch
@@ -3703,7 +3493,7 @@ ALTER TABLE ONLY cmsplugin_twittersearch
 
 
 --
--- Name: cmsplugin_video_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_video_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_video
@@ -3711,7 +3501,7 @@ ALTER TABLE ONLY cmsplugin_video
 
 
 --
--- Name: cmsplugin_zinnia_l_latestentriesplugin_id_293f2f67952dc99e_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_l_latestentriesplugin_id_293f2f67952dc99e_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_categories
@@ -3719,7 +3509,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_categories
 
 
 --
--- Name: cmsplugin_zinnia_l_latestentriesplugin_id_5d47ab05e6e576c8_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_l_latestentriesplugin_id_5d47ab05e6e576c8_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_authors
@@ -3727,7 +3517,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_authors
 
 
 --
--- Name: cmsplugin_zinnia_l_latestentriesplugin_id_7b19879bbccb7f4a_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_l_latestentriesplugin_id_7b19879bbccb7f4a_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_tags
@@ -3735,7 +3525,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_tags
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_authors_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_authors_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_authors
@@ -3743,7 +3533,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_authors
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_categories
@@ -3751,7 +3541,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_categories
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_tags_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_tags_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_tags
@@ -3759,7 +3549,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_tags
 
 
 --
--- Name: cmsplugin_zinnia_selectedentriesplugin_entries_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_selectedentriesplugin_entries_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_selectedentriesplugin_entries
@@ -3767,7 +3557,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_selectedentriesplugin_entries
 
 
 --
--- Name: cmsplugin_zinnia_selectedentriesplugin_id_3be94f0eb3d73a02_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_selectedentriesplugin_id_3be94f0eb3d73a02_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_selectedentriesplugin_entries
@@ -3775,7 +3565,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_selectedentriesplugin_entries
 
 
 --
--- Name: django_admin_log_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_admin_log_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY django_admin_log
@@ -3783,7 +3573,7 @@ ALTER TABLE ONLY django_admin_log
 
 
 --
--- Name: django_comment_flags_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comment_flags_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY django_comment_flags
@@ -3791,7 +3581,7 @@ ALTER TABLE ONLY django_comment_flags
 
 
 --
--- Name: django_comment_flags_user_id_comment_id_flag_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comment_flags_user_id_comment_id_flag_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY django_comment_flags
@@ -3799,7 +3589,7 @@ ALTER TABLE ONLY django_comment_flags
 
 
 --
--- Name: django_comments_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comments_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY django_comments
@@ -3807,7 +3597,7 @@ ALTER TABLE ONLY django_comments
 
 
 --
--- Name: django_content_type_app_label_model_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_content_type_app_label_model_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY django_content_type
@@ -3815,7 +3605,7 @@ ALTER TABLE ONLY django_content_type
 
 
 --
--- Name: django_content_type_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_content_type_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY django_content_type
@@ -3823,7 +3613,7 @@ ALTER TABLE ONLY django_content_type
 
 
 --
--- Name: django_session_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_session_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY django_session
@@ -3831,7 +3621,7 @@ ALTER TABLE ONLY django_session
 
 
 --
--- Name: django_site_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_site_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY django_site
@@ -3839,7 +3629,7 @@ ALTER TABLE ONLY django_site
 
 
 --
--- Name: file_file_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: file_file_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_file
@@ -3847,7 +3637,7 @@ ALTER TABLE ONLY cmsplugin_file
 
 
 --
--- Name: flash_flash_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: flash_flash_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_flash
@@ -3855,7 +3645,7 @@ ALTER TABLE ONLY cmsplugin_flash
 
 
 --
--- Name: imagestore_album_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_album_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY imagestore_album
@@ -3863,7 +3653,7 @@ ALTER TABLE ONLY imagestore_album
 
 
 --
--- Name: imagestore_albumupload_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_albumupload_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY imagestore_albumupload
@@ -3871,7 +3661,7 @@ ALTER TABLE ONLY imagestore_albumupload
 
 
 --
--- Name: imagestore_image_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_image_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY imagestore_image
@@ -3879,7 +3669,7 @@ ALTER TABLE ONLY imagestore_image
 
 
 --
--- Name: link_link_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: link_link_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_link
@@ -3887,7 +3677,7 @@ ALTER TABLE ONLY cmsplugin_link
 
 
 --
--- Name: menus_cachekey_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: menus_cachekey_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY menus_cachekey
@@ -3895,7 +3685,7 @@ ALTER TABLE ONLY menus_cachekey
 
 
 --
--- Name: picture_picture_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: picture_picture_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_picture
@@ -3903,7 +3693,7 @@ ALTER TABLE ONLY cmsplugin_picture
 
 
 --
--- Name: snippet_snippet_name_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: snippet_snippet_name_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY snippet_snippet
@@ -3911,7 +3701,7 @@ ALTER TABLE ONLY snippet_snippet
 
 
 --
--- Name: snippet_snippet_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: snippet_snippet_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY snippet_snippet
@@ -3919,7 +3709,7 @@ ALTER TABLE ONLY snippet_snippet
 
 
 --
--- Name: snippet_snippetptr_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: snippet_snippetptr_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_snippetptr
@@ -3927,7 +3717,7 @@ ALTER TABLE ONLY cmsplugin_snippetptr
 
 
 --
--- Name: south_migrationhistory_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: south_migrationhistory_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY south_migrationhistory
@@ -3935,7 +3725,7 @@ ALTER TABLE ONLY south_migrationhistory
 
 
 --
--- Name: tagging_tag_name_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_tag_name_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY tagging_tag
@@ -3943,7 +3733,7 @@ ALTER TABLE ONLY tagging_tag
 
 
 --
--- Name: tagging_tag_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_tag_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY tagging_tag
@@ -3951,7 +3741,7 @@ ALTER TABLE ONLY tagging_tag
 
 
 --
--- Name: tagging_taggeditem_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_taggeditem_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY tagging_taggeditem
@@ -3959,7 +3749,7 @@ ALTER TABLE ONLY tagging_taggeditem
 
 
 --
--- Name: tagging_taggeditem_tag_id_content_type_id_object_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_taggeditem_tag_id_content_type_id_object_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY tagging_taggeditem
@@ -3967,7 +3757,7 @@ ALTER TABLE ONLY tagging_taggeditem
 
 
 --
--- Name: text_text_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: text_text_cmsplugin_ptr_id_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY cmsplugin_text
@@ -3975,7 +3765,7 @@ ALTER TABLE ONLY cmsplugin_text
 
 
 --
--- Name: thumbnail_kvstore_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: thumbnail_kvstore_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY thumbnail_kvstore
@@ -3983,7 +3773,7 @@ ALTER TABLE ONLY thumbnail_kvstore
 
 
 --
--- Name: zinnia_category_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_category
@@ -3991,7 +3781,7 @@ ALTER TABLE ONLY zinnia_category
 
 
 --
--- Name: zinnia_category_slug_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_slug_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_category
@@ -3999,7 +3789,7 @@ ALTER TABLE ONLY zinnia_category
 
 
 --
--- Name: zinnia_entry_authors_entry_id_c8ede0d0ef33f87_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_authors_entry_id_c8ede0d0ef33f87_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry_authors
@@ -4007,7 +3797,7 @@ ALTER TABLE ONLY zinnia_entry_authors
 
 
 --
--- Name: zinnia_entry_authors_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_authors_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry_authors
@@ -4015,7 +3805,7 @@ ALTER TABLE ONLY zinnia_entry_authors
 
 
 --
--- Name: zinnia_entry_categories_entry_id_4e673c6a4d789b1d_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_categories_entry_id_4e673c6a4d789b1d_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry_categories
@@ -4023,7 +3813,7 @@ ALTER TABLE ONLY zinnia_entry_categories
 
 
 --
--- Name: zinnia_entry_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry_categories
@@ -4031,7 +3821,7 @@ ALTER TABLE ONLY zinnia_entry_categories
 
 
 --
--- Name: zinnia_entry_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry
@@ -4039,7 +3829,7 @@ ALTER TABLE ONLY zinnia_entry
 
 
 --
--- Name: zinnia_entry_related_from_entry_id_1c6f37570b9f8939_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_related_from_entry_id_1c6f37570b9f8939_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry_related
@@ -4047,7 +3837,7 @@ ALTER TABLE ONLY zinnia_entry_related
 
 
 --
--- Name: zinnia_entry_related_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_related_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry_related
@@ -4055,7 +3845,7 @@ ALTER TABLE ONLY zinnia_entry_related
 
 
 --
--- Name: zinnia_entry_sites_entry_id_7b0ddc9a2bc8a31b_uniq; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_sites_entry_id_7b0ddc9a2bc8a31b_uniq; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry_sites
@@ -4063,7 +3853,7 @@ ALTER TABLE ONLY zinnia_entry_sites
 
 
 --
--- Name: zinnia_entry_sites_pkey; Type: CONSTRAINT; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_sites_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY zinnia_entry_sites
@@ -4071,805 +3861,805 @@ ALTER TABLE ONLY zinnia_entry_sites
 
 
 --
--- Name: admin_tools_dashboard_preferences_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: admin_tools_dashboard_preferences_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX admin_tools_dashboard_preferences_user_id ON admin_tools_dashboard_preferences USING btree (user_id);
 
 
 --
--- Name: admin_tools_menu_bookmark_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: admin_tools_menu_bookmark_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX admin_tools_menu_bookmark_user_id ON admin_tools_menu_bookmark USING btree (user_id);
 
 
 --
--- Name: auth_group_permissions_group_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_group_permissions_group_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX auth_group_permissions_group_id ON auth_group_permissions USING btree (group_id);
 
 
 --
--- Name: auth_group_permissions_permission_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_group_permissions_permission_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX auth_group_permissions_permission_id ON auth_group_permissions USING btree (permission_id);
 
 
 --
--- Name: auth_message_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_message_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX auth_message_user_id ON auth_message USING btree (user_id);
 
 
 --
--- Name: auth_permission_content_type_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_permission_content_type_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX auth_permission_content_type_id ON auth_permission USING btree (content_type_id);
 
 
 --
--- Name: auth_user_groups_group_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_groups_group_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX auth_user_groups_group_id ON auth_user_groups USING btree (group_id);
 
 
 --
--- Name: auth_user_groups_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_groups_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX auth_user_groups_user_id ON auth_user_groups USING btree (user_id);
 
 
 --
--- Name: auth_user_user_permissions_permission_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_user_permissions_permission_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX auth_user_user_permissions_permission_id ON auth_user_user_permissions USING btree (permission_id);
 
 
 --
--- Name: auth_user_user_permissions_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: auth_user_user_permissions_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX auth_user_user_permissions_user_id ON auth_user_user_permissions USING btree (user_id);
 
 
 --
--- Name: cms_cmsplugin_language; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_language; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_language ON cms_cmsplugin USING btree (language);
 
 
 --
--- Name: cms_cmsplugin_language_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_language_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_language_like ON cms_cmsplugin USING btree (language varchar_pattern_ops);
 
 
 --
--- Name: cms_cmsplugin_level; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_level; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_level ON cms_cmsplugin USING btree (level);
 
 
 --
--- Name: cms_cmsplugin_lft; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_lft; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_lft ON cms_cmsplugin USING btree (lft);
 
 
 --
--- Name: cms_cmsplugin_new_placeholder_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_new_placeholder_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_new_placeholder_id ON cms_cmsplugin USING btree (placeholder_id);
 
 
 --
--- Name: cms_cmsplugin_parent_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_parent_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_parent_id ON cms_cmsplugin USING btree (parent_id);
 
 
 --
--- Name: cms_cmsplugin_plugin_type; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_plugin_type; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_plugin_type ON cms_cmsplugin USING btree (plugin_type);
 
 
 --
--- Name: cms_cmsplugin_plugin_type_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_plugin_type_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_plugin_type_like ON cms_cmsplugin USING btree (plugin_type varchar_pattern_ops);
 
 
 --
--- Name: cms_cmsplugin_rght; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_rght; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_rght ON cms_cmsplugin USING btree (rght);
 
 
 --
--- Name: cms_cmsplugin_tree_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_cmsplugin_tree_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_cmsplugin_tree_id ON cms_cmsplugin USING btree (tree_id);
 
 
 --
--- Name: cms_globalpagepermission_group_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_globalpagepermission_group_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_globalpagepermission_group_id ON cms_globalpagepermission USING btree (group_id);
 
 
 --
--- Name: cms_globalpagepermission_sites_globalpagepermission_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_globalpagepermission_sites_globalpagepermission_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_globalpagepermission_sites_globalpagepermission_id ON cms_globalpagepermission_sites USING btree (globalpagepermission_id);
 
 
 --
--- Name: cms_globalpagepermission_sites_site_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_globalpagepermission_sites_site_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_globalpagepermission_sites_site_id ON cms_globalpagepermission_sites USING btree (site_id);
 
 
 --
--- Name: cms_globalpagepermission_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_globalpagepermission_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_globalpagepermission_user_id ON cms_globalpagepermission USING btree (user_id);
 
 
 --
--- Name: cms_page_in_navigation; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_in_navigation; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_in_navigation ON cms_page USING btree (in_navigation);
 
 
 --
--- Name: cms_page_level; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_level; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_level ON cms_page USING btree (level);
 
 
 --
--- Name: cms_page_lft; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_lft; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_lft ON cms_page USING btree (lft);
 
 
 --
--- Name: cms_page_limit_visibility_in_menu; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_limit_visibility_in_menu; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_limit_visibility_in_menu ON cms_page USING btree (limit_visibility_in_menu);
 
 
 --
--- Name: cms_page_navigation_extenders; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_navigation_extenders; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_navigation_extenders ON cms_page USING btree (navigation_extenders);
 
 
 --
--- Name: cms_page_navigation_extenders_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_navigation_extenders_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_navigation_extenders_like ON cms_page USING btree (navigation_extenders varchar_pattern_ops);
 
 
 --
--- Name: cms_page_parent_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_parent_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_parent_id ON cms_page USING btree (parent_id);
 
 
 --
--- Name: cms_page_placeholders_page_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_placeholders_page_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_placeholders_page_id ON cms_page_placeholders USING btree (page_id);
 
 
 --
--- Name: cms_page_placeholders_placeholder_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_placeholders_placeholder_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_placeholders_placeholder_id ON cms_page_placeholders USING btree (placeholder_id);
 
 
 --
--- Name: cms_page_publication_date; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_publication_date; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_publication_date ON cms_page USING btree (publication_date);
 
 
 --
--- Name: cms_page_publication_end_date; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_publication_end_date; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_publication_end_date ON cms_page USING btree (publication_end_date);
 
 
 --
--- Name: cms_page_publisher_is_draft; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_publisher_is_draft; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_publisher_is_draft ON cms_page USING btree (publisher_is_draft);
 
 
 --
--- Name: cms_page_publisher_state; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_publisher_state; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_publisher_state ON cms_page USING btree (publisher_state);
 
 
 --
--- Name: cms_page_reverse_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_reverse_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_reverse_id ON cms_page USING btree (reverse_id);
 
 
 --
--- Name: cms_page_reverse_id_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_reverse_id_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_reverse_id_like ON cms_page USING btree (reverse_id varchar_pattern_ops);
 
 
 --
--- Name: cms_page_rght; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_rght; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_rght ON cms_page USING btree (rght);
 
 
 --
--- Name: cms_page_site_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_site_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_site_id ON cms_page USING btree (site_id);
 
 
 --
--- Name: cms_page_soft_root; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_soft_root; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_soft_root ON cms_page USING btree (soft_root);
 
 
 --
--- Name: cms_page_tree_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_page_tree_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_page_tree_id ON cms_page USING btree (tree_id);
 
 
 --
--- Name: cms_pagemoderator_page_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagemoderator_page_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pagemoderator_page_id ON cms_pagemoderator USING btree (page_id);
 
 
 --
--- Name: cms_pagemoderator_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagemoderator_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pagemoderator_user_id ON cms_pagemoderator USING btree (user_id);
 
 
 --
--- Name: cms_pagemoderatorstate_page_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagemoderatorstate_page_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pagemoderatorstate_page_id ON cms_pagemoderatorstate USING btree (page_id);
 
 
 --
--- Name: cms_pagemoderatorstate_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagemoderatorstate_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pagemoderatorstate_user_id ON cms_pagemoderatorstate USING btree (user_id);
 
 
 --
--- Name: cms_pagepermission_group_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagepermission_group_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pagepermission_group_id ON cms_pagepermission USING btree (group_id);
 
 
 --
--- Name: cms_pagepermission_page_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagepermission_page_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pagepermission_page_id ON cms_pagepermission USING btree (page_id);
 
 
 --
--- Name: cms_pagepermission_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pagepermission_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pagepermission_user_id ON cms_pagepermission USING btree (user_id);
 
 
 --
--- Name: cms_pageuser_created_by_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pageuser_created_by_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pageuser_created_by_id ON cms_pageuser USING btree (created_by_id);
 
 
 --
--- Name: cms_pageusergroup_created_by_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_pageusergroup_created_by_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_pageusergroup_created_by_id ON cms_pageusergroup USING btree (created_by_id);
 
 
 --
--- Name: cms_placeholder_slot; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_placeholder_slot; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_placeholder_slot ON cms_placeholder USING btree (slot);
 
 
 --
--- Name: cms_placeholder_slot_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_placeholder_slot_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_placeholder_slot_like ON cms_placeholder USING btree (slot varchar_pattern_ops);
 
 
 --
--- Name: cms_title_application_urls; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_application_urls; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_application_urls ON cms_title USING btree (application_urls);
 
 
 --
--- Name: cms_title_application_urls_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_application_urls_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_application_urls_like ON cms_title USING btree (application_urls varchar_pattern_ops);
 
 
 --
--- Name: cms_title_has_url_overwrite; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_has_url_overwrite; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_has_url_overwrite ON cms_title USING btree (has_url_overwrite);
 
 
 --
--- Name: cms_title_language; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_language; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_language ON cms_title USING btree (language);
 
 
 --
--- Name: cms_title_language_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_language_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_language_like ON cms_title USING btree (language varchar_pattern_ops);
 
 
 --
--- Name: cms_title_page_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_page_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_page_id ON cms_title USING btree (page_id);
 
 
 --
--- Name: cms_title_path; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_path; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_path ON cms_title USING btree (path);
 
 
 --
--- Name: cms_title_path_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_path_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_path_like ON cms_title USING btree (path varchar_pattern_ops);
 
 
 --
--- Name: cms_title_slug; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_slug; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_slug ON cms_title USING btree (slug);
 
 
 --
--- Name: cms_title_slug_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cms_title_slug_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cms_title_slug_like ON cms_title USING btree (slug varchar_pattern_ops);
 
 
 --
--- Name: cmsplugin_categoryentriesplugin_category_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_categoryentriesplugin_category_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_categoryentriesplugin_category_id ON cmsplugin_categoryentriesplugin USING btree (category_id);
 
 
 --
--- Name: cmsplugin_imagestorealbumcarousel_album_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_imagestorealbumcarousel_album_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_imagestorealbumcarousel_album_id ON cmsplugin_imagestorealbumcarousel USING btree (album_id);
 
 
 --
--- Name: cmsplugin_imagestorealbumptr_album_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_imagestorealbumptr_album_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_imagestorealbumptr_album_id ON cmsplugin_imagestorealbumptr USING btree (album_id);
 
 
 --
--- Name: cmsplugin_picture_page_link_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_picture_page_link_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_picture_page_link_id ON cmsplugin_picture USING btree (page_link_id);
 
 
 --
--- Name: cmsplugin_teaser_page_link_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_teaser_page_link_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_teaser_page_link_id ON cmsplugin_teaser USING btree (page_link_id);
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_authors_latestentriesp61b2; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_authors_latestentriesp61b2; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_zinnia_latestentriesplugin_authors_latestentriesp61b2 ON cmsplugin_zinnia_latestentriesplugin_authors USING btree (latestentriesplugin_id);
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_authors_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_authors_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_zinnia_latestentriesplugin_authors_user_id ON cmsplugin_zinnia_latestentriesplugin_authors USING btree (user_id);
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_categories_category_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_categories_category_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_zinnia_latestentriesplugin_categories_category_id ON cmsplugin_zinnia_latestentriesplugin_categories USING btree (category_id);
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_categories_latestentri1d11; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_categories_latestentri1d11; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_zinnia_latestentriesplugin_categories_latestentri1d11 ON cmsplugin_zinnia_latestentriesplugin_categories USING btree (latestentriesplugin_id);
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_tags_latestentriesplug2872; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_tags_latestentriesplug2872; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_zinnia_latestentriesplugin_tags_latestentriesplug2872 ON cmsplugin_zinnia_latestentriesplugin_tags USING btree (latestentriesplugin_id);
 
 
 --
--- Name: cmsplugin_zinnia_latestentriesplugin_tags_tag_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_latestentriesplugin_tags_tag_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_zinnia_latestentriesplugin_tags_tag_id ON cmsplugin_zinnia_latestentriesplugin_tags USING btree (tag_id);
 
 
 --
--- Name: cmsplugin_zinnia_selectedentriesplugin_entries_entry_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_selectedentriesplugin_entries_entry_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_zinnia_selectedentriesplugin_entries_entry_id ON cmsplugin_zinnia_selectedentriesplugin_entries USING btree (entry_id);
 
 
 --
--- Name: cmsplugin_zinnia_selectedentriesplugin_entries_selectedentr6604; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: cmsplugin_zinnia_selectedentriesplugin_entries_selectedentr6604; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX cmsplugin_zinnia_selectedentriesplugin_entries_selectedentr6604 ON cmsplugin_zinnia_selectedentriesplugin_entries USING btree (selectedentriesplugin_id);
 
 
 --
--- Name: django_admin_log_content_type_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_admin_log_content_type_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_admin_log_content_type_id ON django_admin_log USING btree (content_type_id);
 
 
 --
--- Name: django_admin_log_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_admin_log_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_admin_log_user_id ON django_admin_log USING btree (user_id);
 
 
 --
--- Name: django_comment_flags_comment_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comment_flags_comment_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_comment_flags_comment_id ON django_comment_flags USING btree (comment_id);
 
 
 --
--- Name: django_comment_flags_flag; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comment_flags_flag; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_comment_flags_flag ON django_comment_flags USING btree (flag);
 
 
 --
--- Name: django_comment_flags_flag_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comment_flags_flag_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_comment_flags_flag_like ON django_comment_flags USING btree (flag varchar_pattern_ops);
 
 
 --
--- Name: django_comment_flags_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comment_flags_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_comment_flags_user_id ON django_comment_flags USING btree (user_id);
 
 
 --
--- Name: django_comments_content_type_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comments_content_type_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_comments_content_type_id ON django_comments USING btree (content_type_id);
 
 
 --
--- Name: django_comments_site_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comments_site_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_comments_site_id ON django_comments USING btree (site_id);
 
 
 --
--- Name: django_comments_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_comments_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_comments_user_id ON django_comments USING btree (user_id);
 
 
 --
--- Name: django_session_expire_date; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: django_session_expire_date; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX django_session_expire_date ON django_session USING btree (expire_date);
 
 
 --
--- Name: imagestore_album_head_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_album_head_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX imagestore_album_head_id ON imagestore_album USING btree (head_id);
 
 
 --
--- Name: imagestore_album_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_album_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX imagestore_album_user_id ON imagestore_album USING btree (user_id);
 
 
 --
--- Name: imagestore_albumupload_album_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_albumupload_album_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX imagestore_albumupload_album_id ON imagestore_albumupload USING btree (album_id);
 
 
 --
--- Name: imagestore_image_album_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_image_album_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX imagestore_image_album_id ON imagestore_image USING btree (album_id);
 
 
 --
--- Name: imagestore_image_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: imagestore_image_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX imagestore_image_user_id ON imagestore_image USING btree (user_id);
 
 
 --
--- Name: link_link_page_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: link_link_page_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX link_link_page_id ON cmsplugin_link USING btree (page_link_id);
 
 
 --
--- Name: snippet_snippetptr_snippet_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: snippet_snippetptr_snippet_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX snippet_snippetptr_snippet_id ON cmsplugin_snippetptr USING btree (snippet_id);
 
 
 --
--- Name: tagging_taggeditem_content_type_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_taggeditem_content_type_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX tagging_taggeditem_content_type_id ON tagging_taggeditem USING btree (content_type_id);
 
 
 --
--- Name: tagging_taggeditem_object_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_taggeditem_object_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX tagging_taggeditem_object_id ON tagging_taggeditem USING btree (object_id);
 
 
 --
--- Name: tagging_taggeditem_tag_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: tagging_taggeditem_tag_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX tagging_taggeditem_tag_id ON tagging_taggeditem USING btree (tag_id);
 
 
 --
--- Name: zinnia_category_level; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_level; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_category_level ON zinnia_category USING btree (level);
 
 
 --
--- Name: zinnia_category_lft; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_lft; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_category_lft ON zinnia_category USING btree (lft);
 
 
 --
--- Name: zinnia_category_parent_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_parent_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_category_parent_id ON zinnia_category USING btree (parent_id);
 
 
 --
--- Name: zinnia_category_rght; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_rght; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_category_rght ON zinnia_category USING btree (rght);
 
 
 --
--- Name: zinnia_category_slug; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_slug; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_category_slug ON zinnia_category USING btree (slug);
 
 
 --
--- Name: zinnia_category_slug_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_slug_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_category_slug_like ON zinnia_category USING btree (slug varchar_pattern_ops);
 
 
 --
--- Name: zinnia_category_tree_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_category_tree_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_category_tree_id ON zinnia_category USING btree (tree_id);
 
 
 --
--- Name: zinnia_entry_authors_entry_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_authors_entry_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_authors_entry_id ON zinnia_entry_authors USING btree (entry_id);
 
 
 --
--- Name: zinnia_entry_authors_user_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_authors_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_authors_user_id ON zinnia_entry_authors USING btree (user_id);
 
 
 --
--- Name: zinnia_entry_categories_category_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_categories_category_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_categories_category_id ON zinnia_entry_categories USING btree (category_id);
 
 
 --
--- Name: zinnia_entry_categories_entry_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_categories_entry_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_categories_entry_id ON zinnia_entry_categories USING btree (entry_id);
 
 
 --
--- Name: zinnia_entry_related_from_entry_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_related_from_entry_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_related_from_entry_id ON zinnia_entry_related USING btree (from_entry_id);
 
 
 --
--- Name: zinnia_entry_related_to_entry_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_related_to_entry_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_related_to_entry_id ON zinnia_entry_related USING btree (to_entry_id);
 
 
 --
--- Name: zinnia_entry_sites_entry_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_sites_entry_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_sites_entry_id ON zinnia_entry_sites USING btree (entry_id);
 
 
 --
--- Name: zinnia_entry_sites_site_id; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_sites_site_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_sites_site_id ON zinnia_entry_sites USING btree (site_id);
 
 
 --
--- Name: zinnia_entry_slug; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_slug; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_slug ON zinnia_entry USING btree (slug);
 
 
 --
--- Name: zinnia_entry_slug_like; Type: INDEX; Schema: public; Owner: maurobianchi_webuser; Tablespace: 
+-- Name: zinnia_entry_slug_like; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX zinnia_entry_slug_like ON zinnia_entry USING btree (slug varchar_pattern_ops);
 
 
 --
--- Name: album_id_refs_id_151be32d58e4fb07; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: album_id_refs_id_151be32d58e4fb07; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_imagestorealbumptr
@@ -4877,7 +4667,7 @@ ALTER TABLE ONLY cmsplugin_imagestorealbumptr
 
 
 --
--- Name: album_id_refs_id_2f18ef015790bb8e; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: album_id_refs_id_2f18ef015790bb8e; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY imagestore_albumupload
@@ -4885,7 +4675,7 @@ ALTER TABLE ONLY imagestore_albumupload
 
 
 --
--- Name: album_id_refs_id_62969a8eba1b0982; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: album_id_refs_id_62969a8eba1b0982; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_imagestorealbumcarousel
@@ -4893,7 +4683,7 @@ ALTER TABLE ONLY cmsplugin_imagestorealbumcarousel
 
 
 --
--- Name: album_id_refs_id_70910547c4f66871; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: album_id_refs_id_70910547c4f66871; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY imagestore_image
@@ -4901,7 +4691,7 @@ ALTER TABLE ONLY imagestore_image
 
 
 --
--- Name: auth_group_permissions_permission_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_group_permissions_permission_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY auth_group_permissions
@@ -4909,7 +4699,7 @@ ALTER TABLE ONLY auth_group_permissions
 
 
 --
--- Name: auth_message_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_message_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY auth_message
@@ -4917,7 +4707,7 @@ ALTER TABLE ONLY auth_message
 
 
 --
--- Name: auth_user_groups_group_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_groups_group_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY auth_user_groups
@@ -4925,7 +4715,7 @@ ALTER TABLE ONLY auth_user_groups
 
 
 --
--- Name: auth_user_user_permissions_permission_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: auth_user_user_permissions_permission_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY auth_user_user_permissions
@@ -4933,7 +4723,7 @@ ALTER TABLE ONLY auth_user_user_permissions
 
 
 --
--- Name: category_id_refs_id_3f133d7f485073f3; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: category_id_refs_id_3f133d7f485073f3; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_categoryentriesplugin
@@ -4941,7 +4731,7 @@ ALTER TABLE ONLY cmsplugin_categoryentriesplugin
 
 
 --
--- Name: category_id_refs_id_7361f4dc8306a95d; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: category_id_refs_id_7361f4dc8306a95d; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_categories
@@ -4949,7 +4739,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_categories
 
 
 --
--- Name: category_id_refs_id_7e6ce045459f8216; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: category_id_refs_id_7e6ce045459f8216; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_entry_categories
@@ -4957,7 +4747,7 @@ ALTER TABLE ONLY zinnia_entry_categories
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_1253ee2fd6a15acd; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_1253ee2fd6a15acd; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_teaser
@@ -4965,7 +4755,7 @@ ALTER TABLE ONLY cmsplugin_teaser
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_27a18a4d447cf852; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_27a18a4d447cf852; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_link
@@ -4973,7 +4763,7 @@ ALTER TABLE ONLY cmsplugin_link
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_3287bb4c2ac6d963; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_3287bb4c2ac6d963; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_video
@@ -4981,7 +4771,7 @@ ALTER TABLE ONLY cmsplugin_video
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_344c4334bf9780bc; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_344c4334bf9780bc; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_text
@@ -4989,7 +4779,7 @@ ALTER TABLE ONLY cmsplugin_text
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_360f0e33209e77c; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_360f0e33209e77c; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_randomentriesplugin
@@ -4997,7 +4787,7 @@ ALTER TABLE ONLY cmsplugin_randomentriesplugin
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_3c7b549d6b49f079; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_3c7b549d6b49f079; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_categoryentriesplugin
@@ -5005,7 +4795,7 @@ ALTER TABLE ONLY cmsplugin_categoryentriesplugin
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_429eee6130503b22; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_429eee6130503b22; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_file
@@ -5013,7 +4803,7 @@ ALTER TABLE ONLY cmsplugin_file
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_4c030ec612cc9f9c; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_4c030ec612cc9f9c; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_selectedentriesplugin
@@ -5021,7 +4811,7 @@ ALTER TABLE ONLY cmsplugin_selectedentriesplugin
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_4ec9557a35fc351a; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_4ec9557a35fc351a; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_googlemap
@@ -5029,7 +4819,7 @@ ALTER TABLE ONLY cmsplugin_googlemap
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_538a5b8c9ba48b8a; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_538a5b8c9ba48b8a; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_imagestorealbumptr
@@ -5037,7 +4827,7 @@ ALTER TABLE ONLY cmsplugin_imagestorealbumptr
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_5b5bb680225ec8c8; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_5b5bb680225ec8c8; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_latestentriesplugin
@@ -5045,7 +4835,7 @@ ALTER TABLE ONLY cmsplugin_latestentriesplugin
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_5cbc50a2ef3dc97e; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_5cbc50a2ef3dc97e; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_flash
@@ -5053,7 +4843,7 @@ ALTER TABLE ONLY cmsplugin_flash
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_5e40a43cc5b4e113; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_5e40a43cc5b4e113; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_imagestorealbumcarousel
@@ -5061,7 +4851,7 @@ ALTER TABLE ONLY cmsplugin_imagestorealbumcarousel
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_624cc071dc33150a; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_624cc071dc33150a; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_picture
@@ -5069,7 +4859,7 @@ ALTER TABLE ONLY cmsplugin_picture
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_63ded10962cab895; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_63ded10962cab895; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_snippetptr
@@ -5077,7 +4867,7 @@ ALTER TABLE ONLY cmsplugin_snippetptr
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_66700f645215cfeb; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_66700f645215cfeb; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_twittersearch
@@ -5085,7 +4875,7 @@ ALTER TABLE ONLY cmsplugin_twittersearch
 
 
 --
--- Name: cmsplugin_ptr_id_refs_id_776486a456b8859d; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: cmsplugin_ptr_id_refs_id_776486a456b8859d; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_twitterrecententries
@@ -5093,7 +4883,7 @@ ALTER TABLE ONLY cmsplugin_twitterrecententries
 
 
 --
--- Name: content_type_id_refs_id_728de91f; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: content_type_id_refs_id_728de91f; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY auth_permission
@@ -5101,7 +4891,7 @@ ALTER TABLE ONLY auth_permission
 
 
 --
--- Name: created_by_id_refs_id_23321fd516b8b1ea; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: created_by_id_refs_id_23321fd516b8b1ea; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pageuser
@@ -5109,7 +4899,7 @@ ALTER TABLE ONLY cms_pageuser
 
 
 --
--- Name: created_by_id_refs_id_47ce3c433dc63396; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: created_by_id_refs_id_47ce3c433dc63396; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pageusergroup
@@ -5117,7 +4907,7 @@ ALTER TABLE ONLY cms_pageusergroup
 
 
 --
--- Name: django_admin_log_content_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_admin_log_content_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY django_admin_log
@@ -5125,7 +4915,7 @@ ALTER TABLE ONLY django_admin_log
 
 
 --
--- Name: django_admin_log_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_admin_log_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY django_admin_log
@@ -5133,7 +4923,7 @@ ALTER TABLE ONLY django_admin_log
 
 
 --
--- Name: django_comment_flags_comment_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comment_flags_comment_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY django_comment_flags
@@ -5141,7 +4931,7 @@ ALTER TABLE ONLY django_comment_flags
 
 
 --
--- Name: django_comment_flags_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comment_flags_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY django_comment_flags
@@ -5149,7 +4939,7 @@ ALTER TABLE ONLY django_comment_flags
 
 
 --
--- Name: django_comments_content_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comments_content_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY django_comments
@@ -5157,7 +4947,7 @@ ALTER TABLE ONLY django_comments
 
 
 --
--- Name: django_comments_site_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comments_site_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY django_comments
@@ -5165,7 +4955,7 @@ ALTER TABLE ONLY django_comments
 
 
 --
--- Name: django_comments_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: django_comments_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY django_comments
@@ -5173,7 +4963,7 @@ ALTER TABLE ONLY django_comments
 
 
 --
--- Name: entry_id_refs_id_2ca8c253350895b0; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: entry_id_refs_id_2ca8c253350895b0; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_entry_sites
@@ -5181,7 +4971,7 @@ ALTER TABLE ONLY zinnia_entry_sites
 
 
 --
--- Name: entry_id_refs_id_2e8e58e6fb6ebd9; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: entry_id_refs_id_2e8e58e6fb6ebd9; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_entry_categories
@@ -5189,7 +4979,7 @@ ALTER TABLE ONLY zinnia_entry_categories
 
 
 --
--- Name: entry_id_refs_id_456b2b7ada51dea2; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: entry_id_refs_id_456b2b7ada51dea2; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_entry_authors
@@ -5197,7 +4987,7 @@ ALTER TABLE ONLY zinnia_entry_authors
 
 
 --
--- Name: entry_id_refs_id_7026db9978eac1ff; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: entry_id_refs_id_7026db9978eac1ff; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_selectedentriesplugin_entries
@@ -5205,7 +4995,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_selectedentriesplugin_entries
 
 
 --
--- Name: from_entry_id_refs_id_233a09ab4d833995; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: from_entry_id_refs_id_233a09ab4d833995; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_entry_related
@@ -5213,7 +5003,7 @@ ALTER TABLE ONLY zinnia_entry_related
 
 
 --
--- Name: globalpagepermission_id_refs_id_2d0cf4fc2c730e06; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: globalpagepermission_id_refs_id_2d0cf4fc2c730e06; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_globalpagepermission_sites
@@ -5221,7 +5011,7 @@ ALTER TABLE ONLY cms_globalpagepermission_sites
 
 
 --
--- Name: group_id_refs_id_3cea63fe; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: group_id_refs_id_3cea63fe; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY auth_group_permissions
@@ -5229,7 +5019,7 @@ ALTER TABLE ONLY auth_group_permissions
 
 
 --
--- Name: group_id_refs_id_4b6b4203d3639033; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: group_id_refs_id_4b6b4203d3639033; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pagepermission
@@ -5237,7 +5027,7 @@ ALTER TABLE ONLY cms_pagepermission
 
 
 --
--- Name: group_id_refs_id_4f6f13d5b12278f8; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: group_id_refs_id_4f6f13d5b12278f8; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_globalpagepermission
@@ -5245,7 +5035,7 @@ ALTER TABLE ONLY cms_globalpagepermission
 
 
 --
--- Name: group_ptr_id_refs_id_49e243cc99e5e357; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: group_ptr_id_refs_id_49e243cc99e5e357; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pageusergroup
@@ -5253,7 +5043,7 @@ ALTER TABLE ONLY cms_pageusergroup
 
 
 --
--- Name: head_id_refs_id_6eaee70478472cad; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: head_id_refs_id_6eaee70478472cad; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY imagestore_album
@@ -5261,7 +5051,7 @@ ALTER TABLE ONLY imagestore_album
 
 
 --
--- Name: latestentriesplugin_id_refs_cmsplugin_ptr_id_5d2b51b3278967ab; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: latestentriesplugin_id_refs_cmsplugin_ptr_id_5d2b51b3278967ab; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_authors
@@ -5269,7 +5059,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_authors
 
 
 --
--- Name: latestentriesplugin_id_refs_cmsplugin_ptr_id_6efb0c12672935a2; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: latestentriesplugin_id_refs_cmsplugin_ptr_id_6efb0c12672935a2; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_categories
@@ -5277,7 +5067,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_categories
 
 
 --
--- Name: latestentriesplugin_id_refs_cmsplugin_ptr_id_6f912a9095869a39; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: latestentriesplugin_id_refs_cmsplugin_ptr_id_6f912a9095869a39; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_tags
@@ -5285,7 +5075,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_tags
 
 
 --
--- Name: new_placeholder_id_refs_id_74e135c7df6bb944; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: new_placeholder_id_refs_id_74e135c7df6bb944; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_cmsplugin
@@ -5293,7 +5083,7 @@ ALTER TABLE ONLY cms_cmsplugin
 
 
 --
--- Name: page_id_refs_id_3cff375bf4dc9e9d; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: page_id_refs_id_3cff375bf4dc9e9d; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pagemoderatorstate
@@ -5301,7 +5091,7 @@ ALTER TABLE ONLY cms_pagemoderatorstate
 
 
 --
--- Name: page_id_refs_id_5d795dd492bc8605; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: page_id_refs_id_5d795dd492bc8605; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pagemoderator
@@ -5309,7 +5099,7 @@ ALTER TABLE ONLY cms_pagemoderator
 
 
 --
--- Name: page_id_refs_id_74739381d0206170; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: page_id_refs_id_74739381d0206170; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_link
@@ -5317,7 +5107,7 @@ ALTER TABLE ONLY cmsplugin_link
 
 
 --
--- Name: page_id_refs_id_772ba48efc98665f; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: page_id_refs_id_772ba48efc98665f; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_title
@@ -5325,7 +5115,7 @@ ALTER TABLE ONLY cms_title
 
 
 --
--- Name: page_id_refs_id_77f67714d31a36ca; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: page_id_refs_id_77f67714d31a36ca; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pagepermission
@@ -5333,7 +5123,7 @@ ALTER TABLE ONLY cms_pagepermission
 
 
 --
--- Name: page_id_refs_id_944f73bb22baae5; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: page_id_refs_id_944f73bb22baae5; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_page_placeholders
@@ -5341,7 +5131,7 @@ ALTER TABLE ONLY cms_page_placeholders
 
 
 --
--- Name: page_link_id_refs_id_2401223f74758dc2; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: page_link_id_refs_id_2401223f74758dc2; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_picture
@@ -5349,7 +5139,7 @@ ALTER TABLE ONLY cmsplugin_picture
 
 
 --
--- Name: page_link_id_refs_id_7c39f228b9e9ae89; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: page_link_id_refs_id_7c39f228b9e9ae89; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_teaser
@@ -5357,7 +5147,7 @@ ALTER TABLE ONLY cmsplugin_teaser
 
 
 --
--- Name: parent_id_refs_id_122ab180653a773; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: parent_id_refs_id_122ab180653a773; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_page
@@ -5365,7 +5155,7 @@ ALTER TABLE ONLY cms_page
 
 
 --
--- Name: parent_id_refs_id_1fffa484ce18ab03; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: parent_id_refs_id_1fffa484ce18ab03; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_category
@@ -5373,7 +5163,7 @@ ALTER TABLE ONLY zinnia_category
 
 
 --
--- Name: parent_id_refs_id_4f240e19e0b32a03; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: parent_id_refs_id_4f240e19e0b32a03; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_cmsplugin
@@ -5381,7 +5171,7 @@ ALTER TABLE ONLY cms_cmsplugin
 
 
 --
--- Name: placeholder_id_refs_id_646a13f4b0df4960; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: placeholder_id_refs_id_646a13f4b0df4960; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_page_placeholders
@@ -5389,7 +5179,7 @@ ALTER TABLE ONLY cms_page_placeholders
 
 
 --
--- Name: publisher_public_id_refs_id_122ab180653a773; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: publisher_public_id_refs_id_122ab180653a773; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_page
@@ -5397,7 +5187,7 @@ ALTER TABLE ONLY cms_page
 
 
 --
--- Name: selectedentriesplugin_id_refs_cmsplugin_ptr_id_2bb045ee250f1f05; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: selectedentriesplugin_id_refs_cmsplugin_ptr_id_2bb045ee250f1f05; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_selectedentriesplugin_entries
@@ -5405,7 +5195,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_selectedentriesplugin_entries
 
 
 --
--- Name: site_id_refs_id_104217d4ed70f71a; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: site_id_refs_id_104217d4ed70f71a; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_page
@@ -5413,7 +5203,7 @@ ALTER TABLE ONLY cms_page
 
 
 --
--- Name: site_id_refs_id_250ed0b2ebd96f36; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: site_id_refs_id_250ed0b2ebd96f36; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_entry_sites
@@ -5421,7 +5211,7 @@ ALTER TABLE ONLY zinnia_entry_sites
 
 
 --
--- Name: site_id_refs_id_70c81e4a38dfe611; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: site_id_refs_id_70c81e4a38dfe611; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_globalpagepermission_sites
@@ -5429,7 +5219,7 @@ ALTER TABLE ONLY cms_globalpagepermission_sites
 
 
 --
--- Name: snippet_id_refs_id_8063d83ce9512ce; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: snippet_id_refs_id_8063d83ce9512ce; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_snippetptr
@@ -5437,7 +5227,7 @@ ALTER TABLE ONLY cmsplugin_snippetptr
 
 
 --
--- Name: tag_id_refs_id_77c431e0c66ec49e; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: tag_id_refs_id_77c431e0c66ec49e; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_tags
@@ -5445,7 +5235,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_tags
 
 
 --
--- Name: tagging_taggeditem_content_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: tagging_taggeditem_content_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY tagging_taggeditem
@@ -5453,7 +5243,7 @@ ALTER TABLE ONLY tagging_taggeditem
 
 
 --
--- Name: tagging_taggeditem_tag_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: tagging_taggeditem_tag_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY tagging_taggeditem
@@ -5461,7 +5251,7 @@ ALTER TABLE ONLY tagging_taggeditem
 
 
 --
--- Name: to_entry_id_refs_id_233a09ab4d833995; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: to_entry_id_refs_id_233a09ab4d833995; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_entry_related
@@ -5469,7 +5259,7 @@ ALTER TABLE ONLY zinnia_entry_related
 
 
 --
--- Name: user_id_refs_id_210628e22808fb19; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_210628e22808fb19; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pagemoderatorstate
@@ -5477,7 +5267,7 @@ ALTER TABLE ONLY cms_pagemoderatorstate
 
 
 --
--- Name: user_id_refs_id_2805f1124cc96fc2; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_2805f1124cc96fc2; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_authors
@@ -5485,7 +5275,7 @@ ALTER TABLE ONLY cmsplugin_zinnia_latestentriesplugin_authors
 
 
 --
--- Name: user_id_refs_id_280a94e34f0ab76c; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_280a94e34f0ab76c; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pagepermission
@@ -5493,7 +5283,7 @@ ALTER TABLE ONLY cms_pagepermission
 
 
 --
--- Name: user_id_refs_id_2faedda1f8487376; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_2faedda1f8487376; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY admin_tools_dashboard_preferences
@@ -5501,7 +5291,7 @@ ALTER TABLE ONLY admin_tools_dashboard_preferences
 
 
 --
--- Name: user_id_refs_id_31086804e2151d62; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_31086804e2151d62; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY imagestore_album
@@ -5509,7 +5299,7 @@ ALTER TABLE ONLY imagestore_album
 
 
 --
--- Name: user_id_refs_id_3c12a63d20036878; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_3c12a63d20036878; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY imagestore_image
@@ -5517,7 +5307,7 @@ ALTER TABLE ONLY imagestore_image
 
 
 --
--- Name: user_id_refs_id_410656e2874b02ff; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_410656e2874b02ff; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY zinnia_entry_authors
@@ -5525,7 +5315,7 @@ ALTER TABLE ONLY zinnia_entry_authors
 
 
 --
--- Name: user_id_refs_id_447e6e76f5365069; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_447e6e76f5365069; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_globalpagepermission
@@ -5533,7 +5323,7 @@ ALTER TABLE ONLY cms_globalpagepermission
 
 
 --
--- Name: user_id_refs_id_4cbb99dfc574e281; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_4cbb99dfc574e281; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pagemoderator
@@ -5541,7 +5331,7 @@ ALTER TABLE ONLY cms_pagemoderator
 
 
 --
--- Name: user_id_refs_id_6af2836063b2844f; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_6af2836063b2844f; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY admin_tools_menu_bookmark
@@ -5549,7 +5339,7 @@ ALTER TABLE ONLY admin_tools_menu_bookmark
 
 
 --
--- Name: user_id_refs_id_831107f1; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_831107f1; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY auth_user_groups
@@ -5557,7 +5347,7 @@ ALTER TABLE ONLY auth_user_groups
 
 
 --
--- Name: user_id_refs_id_f2045483; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_id_refs_id_f2045483; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY auth_user_user_permissions
@@ -5565,21 +5355,11 @@ ALTER TABLE ONLY auth_user_user_permissions
 
 
 --
--- Name: user_ptr_id_refs_id_23321fd516b8b1ea; Type: FK CONSTRAINT; Schema: public; Owner: maurobianchi_webuser
+-- Name: user_ptr_id_refs_id_23321fd516b8b1ea; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY cms_pageuser
     ADD CONSTRAINT user_ptr_id_refs_id_23321fd516b8b1ea FOREIGN KEY (user_ptr_id) REFERENCES auth_user(id) DEFERRABLE INITIALLY DEFERRED;
-
-
---
--- Name: public; Type: ACL; Schema: -; Owner: bianchimro
---
-
-REVOKE ALL ON SCHEMA public FROM PUBLIC;
-REVOKE ALL ON SCHEMA public FROM bianchimro;
-GRANT ALL ON SCHEMA public TO bianchimro;
-GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
 --
