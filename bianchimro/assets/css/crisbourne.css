@@ -1,0 +1,113 @@
+
+html, body{
+    background-color:rgb(25,54,93);
+    color: #E8DDCB;/*rgb(255, 255, 204);*/
+    
+
+}
+
+.main-content{
+     font-family: Papyrus, fantasy;
+     font-size:17px;
+     line-height:28px;  
+      
+
+}
+
+
+body{
+    padding-top:20px;
+}
+
+h2, h3{
+    font-family: Papyrus, fantasy;
+    color:rgb(255, 255, 204);;
+}
+
+
+.home-citation{
+    margin:0 auto;
+    padding:25px;
+    font-family: Papyrus, fantasy;
+    font-size:16px;
+}
+
+.home-citation-signature{
+    margin:0 auto;
+    padding:25px;
+    font-family: Papyrus, fantasy;
+}
+
+.home-title{ text-align:center; font-family: Papyrus, fantasy; margin-bottom:0px !important;}
+.home-subtitle{ text-align:center; font-family: Papyrus, fantasy; margin-top:0px !important;}
+
+.home-intro{ width:50%; text-align:center;  }
+.home-img-container{ text-align:center; }
+.home-img{ margin:20px auto; height:460px; }
+
+
+.cris-menu a{
+    font-family: Papyrus, fantasy;
+    font-size:18px;
+    line-height:24px;
+    color:rgb(255, 255, 204);
+}
+
+
+.cris-menu .navbar-inner{
+    background:transparent;
+    border:none;
+
+}
+
+
+.cris-menu .nav > li > a {
+float: none;
+padding: 10px 15px 10px;
+color:rgb(255, 255, 204) !important; 
+text-decoration: none;
+text-shadow: 0 1px 0 #bbb;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+      background-color: transparent;
+}
+
+
+/* centers bootstrap navbar */
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
+}
+/* centers bootstrap navbar - end*/
+
+
+
+.top-base{margin-bottom:20px;}
+.top-base-titles{ margin:auto auto;margin-top:50px;}
+
+.footer-base{ margin-top:40px;}
+
+.footer p { text-align:center; font-family: Papyrus, fantasy;
+    font-size:14px;}
+    
+.logo-footer-container{ text-align:center;}    
+.logo-footer{ margin:5px auto; width:260px;}    
+
+
+
+
+/*gallery stuff*/
+/*
+.modal-gallery{
+     background-color:rgb(25,54,93);
+}
+*/

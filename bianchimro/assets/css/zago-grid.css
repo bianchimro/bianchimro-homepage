@@ -1,0 +1,12 @@
+/* Special grid styles
+-------------------------------------------------- */
+
+.alert-normal {
+  color: #000;
+  background-color: #eee;
+  border-color: #fff;
+}
+
+.alert-normal h4 {
+  color: #000;
+}

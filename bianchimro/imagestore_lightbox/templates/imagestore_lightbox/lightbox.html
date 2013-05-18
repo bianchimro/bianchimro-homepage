@@ -1,0 +1,42 @@
+{% load thumbnail %}
+{% load sekizai_tags %}
+
+{% addtoblock "js" %}
+    <script src="{{STATIC_URL}}imagestore_lightbox/js/load-image.min.js"></script>
+    <script src="{{STATIC_URL}}imagestore_lightbox/js/bootstrap-image-gallery.js"></script>
+{% endaddtoblock %}
+
+
+{% addtoblock "css" %}
+    <link rel="stylesheet" href="{{STATIC_URL}}imagestore_lightbox/css/bootstrap-image-gallery.min.css">
+{% endaddtoblock %}
+
+
+<!-- modal-gallery is the modal dialog used for the image gallery -->
+<div id="modal-gallery-{{ lightbox.id }}" class="modal modal-gallery hide fade" tabindex="-1">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+        <h3 class="modal-title"></h3>
+    </div>
+    <div class="modal-body"><div class="modal-image"></div></div>
+    <div class="modal-footer">
+        <a class="btn modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+        <a class="btn modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+        <!--<a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>-->
+    </div>
+</div>
+
+<div class="lightbox-container">
+    <h3 class="lightbox-title">{{ lightbox.album.name }}</h3>
+    <div id='lightbox{{ lightbox.id }}' class="{{ lightbox.skin }}" data-toggle="modal-gallery" data-target="#modal-gallery-{{ lightbox.id }}">
+        {% for image in images %}
+            {% thumbnail image.image lightbox.size crop="center" as im %}
+                {% thumbnail image.image lightbox.full_size as full %}
+                    <a href="{{ full.url }}" title="{{image.title}}" data-gallery="gallery"><img  class="img-polaroid" src="{{ im.url }}"/></a>
+                {% endthumbnail %}
+            {% endthumbnail %}
+        {% endfor %}
+    </div>
+
+</div>
